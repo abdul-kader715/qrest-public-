@@ -1,0 +1,369 @@
+/*--------------------------------------------------------------
+4. qrest-footer
+--------------------------------------------------------------*/
+.qrest-site-footer {
+    background: #1b4962;
+    position: relative;
+    font-size: 15px;
+    overflow: hidden;
+
+    ul {
+        list-style: none;
+    }
+
+    p {
+        color: $white;
+    }
+
+    li {
+        color: $white;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .qrest-upper-footer {
+        padding: 70px 0;
+    }
+
+    @media (max-width: 991px) {
+        .qrest-upper-footer {
+            padding: 50px 0 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .qrest-upper-footer {
+            padding: 60px 0 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .qrest-upper-footer .col {
+            min-height: 235px;
+            margin-bottom: 70px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .qrest-upper-footer .col {
+            min-height: auto;
+            margin-bottom: 60px;
+        }
+    }
+
+    .widget-title {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 767px) {
+        .widget-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .widget-title {
+        h3 {
+            font-size: 24px;
+            color: $white;
+            margin: 0;
+            position: relative;
+            font-family: $heading-font-s2;
+            font-weight: 400;
+        }
+    }
+
+    .about-widget {
+        .logo {
+            max-width: 180px;
+            font-size: 40.62px;
+            font-family: $base-font;
+            color: $white;
+            font-weight: 700;
+            margin-right: 0;
+
+            i {
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+                font-size: 29px;
+                color: $white;
+                line-height: 37px;
+                background: $theme-primary-color;
+                padding: 5px;
+                display: inline-block;
+                padding-left: 8px;
+            }
+
+            span {
+                color: $theme-primary-color;
+            }
+        }
+    }
+
+    .about-widget {
+        p {
+            margin-bottom: 25px;
+            line-height: 1.9em;
+            margin-top: 20px;
+            font-family: $heading-font;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .about-widget {
+        .contact {
+            display: flex;
+            align-items: center;
+
+            .text {
+                margin-left: 10px;
+
+                h4 {
+                    font-weight: 400;
+                    font-size: 17px;
+                    font-family: $heading-font;
+                    color: $white;
+                    margin-bottom: 4px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 17px;
+                    font-family: $heading-font;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .qrest-service-link-widget {
+        padding-left: 40px;
+    }
+
+    .link-widget {
+        overflow: hidden;
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 75px;
+        }
+
+        @media (max-width: 1199px) {
+            padding-left: 20px;
+        }
+
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 350px;
+        }
+
+        ul {
+            li {
+                position: relative;
+
+                a {
+                    color: $white;
+                    font-size: 17px;
+                    font-family: $heading-font;
+
+                    &:hover {
+                        color: $theme-primary-color;
+                    }
+                }
+            }
+
+            li+li {
+                padding-top: 15px;
+            }
+        }
+    }
+
+    .tag-widget {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                a {
+                    display: block;
+                    padding: 8px 20px;
+                    background: rgba(255, 255, 255, 0.1);
+                    font-size: 16px;
+                    color: $white;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .service-widget {
+        padding-left: 40px;
+
+        ul {
+            li {
+                position: relative;
+
+                a {
+                    color: $white;
+                    font-size: 17px;
+                    font-family: $heading-font;
+
+                    &:hover {
+                        color: $theme-primary-color;
+                    }
+                }
+            }
+
+            li+li {
+                padding-top: 15px;
+            }
+        }
+    }
+
+    .contact-widget {
+        padding-left: 60px;
+        ul {
+            li {
+                display: block;
+                font-size: 17px;
+                font-weight: 400;
+                color: $white;
+                margin-bottom: 10px;
+                font-family: $heading-font;
+            }
+        }
+
+        .social {
+            margin-top: 20px;
+
+            h4 {
+                color: $white;
+                font-size: 17px;
+                font-family: $base-font;
+                font-weight: 700;
+            }
+
+            ul {
+                margin-top: 15px;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        background: $white;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 5px;
+                        color: $theme-primary-color;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        a {
+                            background: $theme-primary-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social-widget {
+        ul {
+            li {
+                a {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: $theme-primary-color;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .qrest-lower-footer {
+        text-align: center;
+        position: relative;
+
+        .row {
+            padding: 20px 0;
+            position: relative;
+            border-top: 1px solid #315a71;
+        }
+
+        .copyright {
+            font-size: 17px;
+            margin: 0;
+            text-align: left;
+            font-family: $heading-font;
+
+
+            @media (max-width: 991px) {
+                float: none;
+                display: block;
+            }
+
+            &.s2 {
+                text-align: right;
+            }
+        }
+    }
+
+    .instagram {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px -3px;
+
+            li {
+                -ms-flex: 0 0 33.33%;
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+                margin-bottom: 5px;
+                padding: 0px 3px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .shape-1 {
+        position: absolute;
+        left: -275px;
+        bottom: -245px;
+    }
+
+    .shape-2 {
+        position: absolute;
+        left: -275px;
+        bottom: -263px;
+    }
+    .side-text-logo {
+        top: -234px;
+    }
+}
