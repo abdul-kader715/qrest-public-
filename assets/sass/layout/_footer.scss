@@ -6,6 +6,7 @@
     position: relative;
     font-size: 15px;
     overflow: hidden;
+    z-index: 1;
 
     ul {
         list-style: none;
@@ -208,6 +209,10 @@
     .service-widget {
         padding-left: 40px;
 
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+
         ul {
             li {
                 position: relative;
@@ -231,6 +236,11 @@
 
     .contact-widget {
         padding-left: 60px;
+
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
+
         ul {
             li {
                 display: block;
@@ -319,7 +329,9 @@
             margin: 0;
             text-align: left;
             font-family: $heading-font;
-
+            @media (max-width: 991px) {
+                text-align: center;
+            }
 
             @media (max-width: 991px) {
                 float: none;
@@ -328,6 +340,9 @@
 
             &.s2 {
                 text-align: right;
+                @media (max-width: 991px) {
+                    text-align: center;
+                }
             }
         }
     }
@@ -363,7 +378,13 @@
         left: -275px;
         bottom: -263px;
     }
+
     .side-text-logo {
-        top: -234px;
+        top: 130px;
+        z-index: -1;
+
+        @media (max-width:1699px) {
+            right: -5%;
+        }
     }
 }

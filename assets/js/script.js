@@ -570,15 +570,15 @@
             arrows: false,
             responsive: {
                 0: {
-                    items: 1
-                },
-
-                550: {
                     items: 2
                 },
 
-                992: {
+                550: {
                     items: 3
+                },
+
+                992: {
+                    items: 4
                 },
 
                 1300: {
