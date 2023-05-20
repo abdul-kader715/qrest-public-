@@ -1297,6 +1297,13 @@
     overflow: hidden;
     z-index: 1;
 
+    &.qrest-brand-section-s2 {
+        background: $white;
+        .grid {
+            width: 200px;
+        }
+    }
+
     .shape {
         position: absolute;
         left: -15%;
