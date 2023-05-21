@@ -587,9 +587,81 @@
             }
         });
     }
+    /*------------------------------------------
+            = project-slider
+    -------------------------------------------*/
+    if ($(".project-slider").length) {
+        $(".project-slider").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 20,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
 
+                550: {
+                    items: 3
+                },
 
+                992: {
+                    items: 4
+                },
 
+                1300: {
+                    items: 5
+                }
+            }
+        });
+    }
+    /*------------------------------------------
+            = team-slider
+    -------------------------------------------*/
+    if ($(".team-slider").length) {
+        $(".team-slider").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 20,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 2
+                },
+
+                992: {
+                    items: 3
+                },
+
+                1300: {
+                    items: 3
+                }
+            }
+        });
+    }
+
+    $('select').niceSelect();
+
+    $('input[name="birthday"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'),10)
+      }, function(start, end, label) {
+        var years = moment().diff(start, 'years');
+        alert("You are " + years + " years old!");
+      });
+      
     /*------------------------------------------
         = POST SLIDER
     -------------------------------------------*/
@@ -881,3 +953,7 @@
 
 
 })(window.jQuery);
+
+
+
+

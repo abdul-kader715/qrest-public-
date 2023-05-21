@@ -5016,6 +5016,73 @@ img {
   transform: translateX(-50%);
 }
 
+/* qrest-project-section */
+.qrest-project-section .qrest-section-title-s2 h2 {
+  margin-right: 50px;
+}
+
+.project-single {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.project-single .image img {
+  width: 100%;
+}
+.project-single:hover .text {
+  opacity: 0.89;
+  visibility: visible;
+  left: 0;
+}
+.project-single .text {
+  position: absolute;
+  background: #1b4962;
+  opacity: 0;
+  visibility: hidden;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  padding: 40px;
+  border-top: 3px solid #fff;
+  padding: 40px;
+  border-top-right-radius: 230px 150px;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.project-single .text h2 {
+  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.project-single .text span {
+  font-size: 17px;
+  font-family: "Fira Sans", sans-serif;
+  color: #fff;
+}
+.project-single .icon {
+  position: absolute;
+  right: 55px;
+  top: 7px;
+}
+.project-single .icon a i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ec4760;
+  border: 5px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.project-single .icon a i:hover {
+  background: #1b4962;
+}
+
 /* qrest-choose-section */
 .qrest-choose-section {
   border-top: 1px solid #dddddd;
@@ -5139,4 +5206,161 @@ img {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 0;
+}
+
+/* qrest-team-section-s2 */
+.qrest-team-section-s2 .qrest-section-title-s2 h2 {
+  margin-right: 50px;
+}
+
+/* qrest-team-section-s2 */
+.team-single-content {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+}
+.team-single-content .image img {
+  width: 100%;
+}
+.team-single-content:hover .icon {
+  opacity: 1;
+  visibility: visible;
+  left: 20px;
+}
+.team-single-content:hover .icon li:nth-child(2) {
+  margin-left: 0px;
+}
+.team-single-content:hover .icon li:last-child {
+  margin-left: 0px;
+}
+.team-single-content .icon {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.team-single-content .icon li {
+  display: block;
+}
+.team-single-content .icon li:nth-child(2) {
+  transition: all 0.5s ease-in-out;
+  margin-left: -20px;
+}
+.team-single-content .icon li:last-child {
+  transition: all 0.7s ease-in-out;
+  margin-left: -30px;
+}
+.team-single-content .icon li a {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  color: #1b4962;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #1b4962;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-single-content .icon li:hover a {
+  background: #ec4760;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.team-single-content .content {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.team-single-content .content h2 a {
+  font-size: 23px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.team-single-content .content h2 a:hover {
+  color: #ec4760;
+}
+.team-single-content .content span {
+  font-size: 17px;
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(99, 99, 99);
+}
+
+/* qrest-appointment-area */
+.qrest-appointment-area {
+  position: relative;
+}
+.qrest-appointment-area::before {
+  position: absolute;
+  left: 18%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgb(241, 247, 252);
+  border-radius: 5px;
+  z-index: -1;
+}
+.qrest-appointment-area .qrest-section-title-s2 {
+  margin-bottom: 0;
+}
+.qrest-appointment-area .side-image {
+  position: absolute;
+  left: 10%;
+  top: -49px;
+}
+.qrest-appointment-area .shape-1 {
+  position: absolute;
+  right: 30px;
+  bottom: 75px;
+}
+.qrest-appointment-area .shape-2 {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+
+.app-form {
+  margin-right: 95px;
+}
+.app-form .form-control {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  color: #636363;
+  font-weight: 400;
+  padding-left: 20px;
+  background: #fff;
+  /* border: 1px solid transparent; */
+  margin-bottom: 20px;
+}
+.app-form .form-control:focus {
+  box-shadow: 0 0 0 0.25rem transparent;
+  border: 1px solid transparent;
+}
+.app-form .nice-select {
+  line-height: 28px;
+}
+.app-form .form-btn {
+  width: 100%;
+  border: transparent;
+  font-size: 17px;
+  font-family: "Fira Sans", sans-serif;
+  background: #1b4962;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 0;
+  text-align: center;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
