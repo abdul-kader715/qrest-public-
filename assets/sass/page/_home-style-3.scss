@@ -1,0 +1,208 @@
+/* qrest-about-section-s3 */
+.qrest-about-section-s3 {
+    position: relative;
+
+    .qrest-section-title-s3 {
+        text-align: left;
+    }
+
+    .about-left-content {
+        .about-img-1 {
+            background-color: rgb(189, 189, 189);
+            box-shadow: 0px 0px 87px 0px rgba(12, 62, 185, 0.18);
+            width: 300px;
+            height: 300px;
+        }
+
+        .shape-1 {
+            left: 250px;
+            bottom: -78px;
+            width: 200px;
+        }
+    }
+
+    .qrest-section-title-s3 {
+        margin-right: 105px;
+        margin-bottom: 20px;
+
+        p {
+            padding-right: 71px;
+            margin-bottom: 0;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        &::before {
+            position: absolute;
+            content: '';
+            right: 0;
+            bottom: 0;
+            width: 250px;
+            height: 250px;
+            background: $theme-primary-color-s3;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            right: -67px;
+            bottom: 141px;
+            width: 250px;
+            height: 250px;
+            background: #fbce61;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            z-index: -1;
+        }
+    }
+}
+
+.about-right-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &:hover {
+        .icon {
+            background: $theme-primary-color-s3;
+            color: $white;
+            box-shadow: 0px 0px 8px 0px transparent;
+        }
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $theme-primary-color-s3;
+        transition: all 0.3s ease-in-out;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.11);
+        font-size: 30px;
+    }
+
+    .text {
+        margin-left: 20px;
+        margin-right: 120px;
+        width: calc(100% - 40%);
+
+        h4 {
+            font-family: $heading-font;
+            color: #181a25;
+            font-weight: 700;
+        }
+
+        span {
+            font-size: 17px;
+            font-family: $base-font;
+            color: #626262;
+        }
+    }
+}
+
+/* qrest-service-section-s3 */
+.qrest-service-section-s3 {
+
+    .qrest-section-title-s3 {
+        margin: 0 70px;
+        margin-bottom: 60px;
+    }
+
+    .service-single-item {
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+        box-shadow: 0px 0px 120px 0px transparent;
+        margin-bottom: 25px;
+        border-radius: 3px;
+
+        .image {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            background-color: rgb(250, 178, 4);
+            opacity: 0.941;
+            text-align: left;
+            padding: 45px; 
+            padding-left: 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            .icon{
+                margin: 0;
+                border: 5px solid transparent;
+                background: $white;
+                i{
+                    color: $theme-primary-color-s3;
+                }
+            }
+            .text{
+                h2{
+                    a{
+                        padding-left: 0;
+                        color: $white;
+                    }
+                }
+                p{
+                    padding: 0 ;  
+                    color: $white;
+                }
+                
+                .theme-btn-s3{
+                    background: $white;
+                    color: $theme-primary-color-s3;
+                    i{
+                        color: $theme-primary-color-s3;
+                    }
+                    &:hover{
+                        background: $white;
+                        color: $theme-primary-color-s3;
+                        i{
+                            color: $theme-primary-color-s3;
+                        }
+                        &::after{
+                            background: transparent;
+                        }
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        // &:hover{
+           
+                
+                
+        //         .text{
+        //             h2{
+        //                 a{
+        //                    color: $white;
+        //                 }
+        //             }
+        //             p{
+        //                 color: $white;
+        //             }
+                    
+                    
+        //         }
+          
+        // }
+    }
+
+}

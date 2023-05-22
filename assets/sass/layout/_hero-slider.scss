@@ -337,7 +337,8 @@
 /*-------------------------------------------
 	hero style 1
 --------------------------------------------*/
-.static-hero {
+.static-hero,
+.static-hero-style-2 {
 	height: 990px;
 	display: flex;
 	position: relative;
@@ -354,7 +355,7 @@
 		height: 600px;
 	}
 
-	
+
 
 	.background-img {
 		position: absolute;
@@ -376,10 +377,12 @@
 		width: 100%;
 		height: 100%;
 		z-index: -1;
+
 		@media (max-width:1399px) {
 			left: 50%;
 			top: 15%;
 		}
+
 		@media (max-width:991px) {
 			display: none;
 		}
@@ -390,6 +393,7 @@
 		left: 0;
 		top: 120px;
 		z-index: -1;
+
 		@media (max-width:1199px) {
 			display: none;
 		}
@@ -401,6 +405,7 @@
 		left: 79px;
 		top: 88%;
 		z-index: -1;
+
 		@media (max-width:1399px) {
 			display: none;
 		}
@@ -438,9 +443,11 @@
 		@media (max-width:991px) {
 			margin-top: 70px;
 		}
+
 		@media (max-width:767px) {
 			margin-top: 90px;
 		}
+
 		.sub-title {
 			font-size: 19px;
 			font-family: $heading-font;
@@ -459,9 +466,11 @@
 			font-weight: 700;
 			margin-top: 24px;
 			margin-bottom: 15px;
+
 			@media (max-width:1399px) {
 				font-size: 60px;
 			}
+
 			@media (max-width:1399px) {
 				font-size: 40px;
 			}
@@ -472,6 +481,7 @@
 			font-family: $heading-font;
 			color: #636363;
 			font-weight: 400;
+
 			@media (max-width:991px) {
 				font-size: 15px;
 			}
@@ -523,16 +533,20 @@
 	.side-text-logo {
 		top: 130px;
 		right: -30px;
+
 		@media (max-width:1699px) {
 			top: 172px;
 			right: -140px;
 		}
+
 		@media (max-width:1399px) {
 			top: 172px;
 			right: -72px;
 		}
-		h2{
+
+		h2 {
 			-webkit-text-stroke-color: #c3c7ca;
+
 			@media (max-width:1399px) {
 				font-size: 100px;
 			}
@@ -564,4 +578,55 @@
 		-webkit-box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
 		box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
 	}
+}
+
+
+/* static-hero-style-2 */
+.static-hero-style-2 {
+	background-color: rgb(226, 246, 253);
+	background-image: none;
+	margin-top: 0;
+	height: 800px;
+
+
+
+	.text {
+		border-radius: 30px;
+		background-color: rgb(255, 255, 255);
+		padding-top: 80px;
+		padding-left: 50px;
+		padding-bottom: 80px;
+		padding-right: 60px;
+		position: relative;
+		left: -100px;
+
+		.sub-title {
+			font-size: 22px;
+			font-family: $heading-font;
+			color: $theme-primary-color;
+			text-decoration: underline;
+			border: transparent;
+			text-transform: capitalize;
+			font-weight: 700;
+		}
+	
+		  
+		.title {
+
+			span {
+				color: $theme-primary-color;
+			}
+		}
+
+		p {
+			padding-right: 150px;
+		}
+
+		.shape {
+			position: absolute;
+			right: 20px;
+			bottom: 0;
+		}
+	}
+
 }

@@ -650,7 +650,7 @@
         });
     }
 
-    $('select').niceSelect();
+     $('select').niceSelect();
 
     $('input[name="birthday"]').daterangepicker({
         singleDatePicker: true,
