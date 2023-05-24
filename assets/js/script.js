@@ -619,6 +619,18 @@
         });
     }
     /*------------------------------------------
+            = project-slider-s2
+    -------------------------------------------*/
+    $('.project-slider-s2').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+
+    /*------------------------------------------
             = team-slider
     -------------------------------------------*/
     if ($(".team-slider").length) {
