@@ -176,6 +176,38 @@
 		font-size: 14px;
 	}
 }
+.theme-btn-s4 {
+	background: transparent;
+	color: $theme-primary-color-s4;
+	display: inline-block;
+	font-weight: 500;
+	padding: 10px 20px;
+	font-family: $heading-font;
+	border: 1px solid $theme-primary-color-s4;
+	text-transform: capitalize;
+	z-index: 1;
+	position: relative;
+	font-size: 15px;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+	&:hover,
+	&:focus,
+	&:active {
+		border: 1px solid transparent;
+		color: $white;
+		background: $theme-primary-color-s4;
+	}
+
+
+	@include media-query(991px) {
+		font-size: 18px;
+	}
+
+	@include media-query(767px) {
+		padding: 12px 18px;
+		font-size: 14px;
+	}
+}
 
 .view-cart-btn {
 	@extend .theme-btn;
