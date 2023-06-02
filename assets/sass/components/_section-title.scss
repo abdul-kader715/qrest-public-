@@ -187,6 +187,7 @@
 		font-weight: 400;
 	}
 }
+
 .qrest-section-title-s4 {
 	text-align: center;
 	margin-bottom: 60px;
@@ -203,11 +204,11 @@
 		padding-left: 10px;
 		position: relative;
 		font-weight: 400;
-		background:$theme-primary-color-s4;
-		padding:5px 15px;
+		background: $theme-primary-color-s4;
+		padding: 5px 15px;
 		padding-left: 25px;
-		
-		  
+
+
 
 		&::before {
 			position: absolute;
@@ -258,6 +259,7 @@
 		font-weight: 400;
 	}
 }
+
 .qrest-section-title-s5 {
 	text-align: center;
 	margin-bottom: 60px;
@@ -277,11 +279,12 @@
 		margin-top: 10px;
 		margin-bottom: 40px;
 		color: rgb(26, 30, 42);
+
 		&::before {
 			position: absolute;
 			left: 50%;
 			bottom: -20px;
-			transform: translate(-50% ,-50%);
+			transform: translate(-50%, -50%);
 			content: "";
 			width: 110px;
 			height: 5px;
@@ -311,6 +314,7 @@
 		font-weight: 400;
 	}
 }
+
 .qrest-section-title-s6 {
 	text-align: center;
 	margin-bottom: 60px;
@@ -318,30 +322,33 @@
 	@include media-query(767px) {
 		margin-bottom: 40px;
 	}
-	span{
-			font-size: 20px;
-			font-family:$heading-font;
-			color: $white;
-			font-weight: 700;
-			text-transform: uppercase;
-		.color{
+
+	span {
+		font-size: 20px;
+		font-family: $heading-font;
+		color: $white;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		.color {
 			color: $theme-primary-color-s6;
 		}
 	}
+
 	h2 {
 		font-size: 35px;
 		line-height: 55px;
 		margin: 0;
 		position: relative;
 		text-transform: capitalize;
-		font-family:$heading-font-s2;
+		font-family: $heading-font-s2;
 		font-weight: 700;
 		margin-top: 10px;
 		margin-bottom: 40px;
 		color: $white;
-		
-	
-		  
+
+
+
 		@media (max-width:991px) {
 			font-size: 30px;
 			line-height: 40px;
@@ -361,8 +368,59 @@
 	p {
 		font-size: 17px;
 		font-family: $base-font;
-		color: $text-light-color;
+		color: $white;
 		font-weight: 400;
+		color: #d9d4d4;
+
 	}
 }
+.qrest-section-title-s7 {
+	text-align: center;
+	margin-bottom: 60px;
+
+	@include media-query(767px) {
+		margin-bottom: 40px;
+	}
+
+	
+
+	h2 {
+		font-size: 35px;
+		line-height: 55px;
+		margin: 0;
+		position: relative;
+		text-transform: capitalize;
+		font-family: $heading-font-s2;
+		font-weight: 600;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		color: #222222;
+
+		  
+
+		@media (max-width:991px) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+
+		@include media-query(767px) {
+			font-size: 25px;
+			line-height: 35px;
+		}
+
+		@include media-query(330px) {
+			font-size: 20px;
+		}
+
+	}
+
+	p {
+		font-size: 17px;
+		font-family: $base-font;
+		color: $white;
+		font-weight: 400;
+		color: #636363;
+	}
+}
+
   

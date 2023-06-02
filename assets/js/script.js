@@ -661,6 +661,37 @@
             }
         });
     }
+    /*------------------------------------------
+            = testimoniyal-slider
+    -------------------------------------------*/
+    if ($(".testimoniyal-slider").length) {
+        $(".testimoniyal-slider").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 20,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 2
+                },
+
+                992: {
+                    items: 3
+                },
+
+                1300: {
+                    items: 3
+                }
+            }
+        });
+    }
 
      $('select').niceSelect();
 
