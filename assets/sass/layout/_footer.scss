@@ -388,3 +388,64 @@
         }
     }
 }
+
+
+/* qrest-site-footer-s2 */
+.qrest-site-footer-s2{
+        background: url(../images/footer-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgb(33, 49, 98, 0.9);
+        }
+      
+
+    .social {
+        margin-top: 20px;
+
+        ul {
+            margin-top: 15px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    background: $white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 5px;
+                    color: $theme-primary-color;
+                    transition: all .3s ease-in-out;
+                }
+
+                &:hover {
+                    a {
+                        background: $theme-primary-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .link-widget{
+        padding-left: 20px;
+    }
+    .contact-widget{
+        padding-left: 75px;
+    }
+    .service-widget {
+        padding-left: 75px;
+    }
+}

@@ -785,6 +785,10 @@
             }
         }
     }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color-s3;
+    }
 }
 
 /* qrest-compny-solution-section */

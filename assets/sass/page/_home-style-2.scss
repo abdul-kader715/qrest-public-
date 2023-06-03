@@ -333,10 +333,35 @@
 
 /* qrest-project-section */
 .qrest-project-section {
+    padding-bottom: 0;
     .qrest-section-title-s2 {
         h2 {
             margin-right: 50px;
         }
+    }
+    .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .owl-dots button.owl-dot {
+        width: 25px;
+        height: 11px;
+        border-radius: 100px;
+        display: inline-block;
+        background: $theme-primary-color-s2;
+        margin: 0 4px;
+        position: relative;
+        border: 0;
+    }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color;
+        width: 40px;
     }
 }
 
@@ -585,7 +610,32 @@
 /* qrest-team-section-s2 */
 .qrest-team-section-s2 {}
 
-.team-slider {}
+.team-slider {
+    .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .owl-dots button.owl-dot {
+        width: 25px;
+        height: 11px;
+        border-radius: 100px;
+        display: inline-block;
+        background: #a4b6c0;
+        margin: 0 4px;
+        position: relative;
+        border: 0;
+    }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color;
+        width: 40px;
+    }
+}
 
 .team-single-content {
     position: relative;
@@ -827,4 +877,18 @@
             }
         }
     }
+  
+
+
+    .owl-dots button.owl-dot {
+        width: 25px;
+        background: $theme-primary-color-s2;
+        border-radius: 12px;
+    }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color;
+        width: 40px;
+    }
+
 }

@@ -1298,6 +1298,7 @@
 
     &.qrest-brand-section-s2 {
         background: $white;
+
         .grid {
             width: 200px;
         }
@@ -1374,6 +1375,30 @@
             margin-bottom: 10px;
         }
     }
+    
+    .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .owl-dots button.owl-dot {
+        width: 10px;
+        height: 12px;
+        border-radius: 100px;
+        display: inline-block;
+        background: #a4b6c0;
+        margin: 0 4px;
+        position: relative;
+        border: 0;
+    }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color;
+    }
 }
 
 .team-single {
@@ -1437,123 +1462,128 @@
         justify-content: end;
         position: relative;
 
-        .social {
-            display: inline-block;
-            text-align: end;
-            margin-right: 20px;
 
-            
-            #open:checked~.list,
-            #open.s1:checked~.list {
-                width: 200px;
-                opacity: 1;
-            }
+        .sochal-item{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            #open:checked~label .icofont-minus,
-            #open.s1:checked~label .icofont-minus {
-                scale: 1;
-                display: block;
-                background: $theme-primary-color;
-                color: #fff;
 
-                border-radius: 50%;
-                display: flex;
-                height: 35px;
-                width: 35px;
-                align-items: center;
-                justify-content: center;
+            .menuschol {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                background-color: $theme-primary-color;
+                border-radius: 12px;
                 cursor: pointer;
-            }
-
-            #open:checked~label .icofont-plus,
-            #open.s1:checked~label .icofont-plus {
-                scale: 0;
-                display: none;
-            }
-
-            .menu-icon .icofont-minus {
-                scale: 0;
-                transition: all 0.5s;
-                font-size: 20px;
-                display: none;
-            }
-
-            .icofont-plus {
-                scale: 1;
-                transition: all 0.5s;
-                font-size: 20px;
-                display: block;
-                background: #1b4962;
-                color: #fff;
-
-                border-radius: 50%;
                 display: flex;
-                height: 35px;
-                width: 35px;
-                align-items: center;
                 justify-content: center;
-                cursor: pointer;
+                align-items: center;
+                color: $white;
+                margin-right: 20px;
+                z-index: 11;
+
+                &.active {
+                    background-color: $theme-primary-color-s2;
+                }
             }
 
-            .list {
-                width: 0px;
-                width: max-content;
-                display: flex;
-                overflow: hidden;
-                transition: all 1s;
-                opacity: 0;
+            .menuschol::before {
+                content: '+';
                 position: absolute;
-                top: 15px;
-                left: 0;
+                font-size: 30px;
+                font-weight: 500;
+                color: $white;
+                transition: 1.5s;
             }
 
-            label {}
+            .menuschol.active::before {
+                content: '-';
+            }
 
-            .i1 {
+            .menu {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: -224px;
+                z-index: -1;
+                transition: transform 0.5s, width 0.5s, height 0.5s;
+                transition-delay: 1s, 0.5s, 0.5s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                opacity: 0;
+                visibility: hidden;
+                @media (max-width:991px) {
+                    left: -210px;
+                }
+            }
+
+            .menuschol.active~.menu {
+                width: 270px;
+                z-index: 1;
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+            .menu ul {
+                position: relative;
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                margin: 0 14px;
-                border-radius: 50%;
-                padding: 7px;
-                font-size: 20px;
-                background: #1b4962;
-                color: #fff;
+                margin-top: -5px;
+            }
+
+            .menu ul li {
+                list-style: none;
                 cursor: pointer;
-                transition: all .3s ease-in-out;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: $theme-primary-color-s2;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-30px);
+                transition: 0.25s;
+                transition-delay: calc(0s + var(--i));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                transition: all .3s;
+                @media (max-width:991px) {
+                    margin-left: 5px;
+                }
 
                 &:hover {
                     background: $theme-primary-color;
                 }
             }
 
-            .menu-icon {
-                border-radius: 50%;
-                display: flex;
-                height: 35px;
-                width: 35px;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
+            .menuschol.active~.menu ul li {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+                transition-delay: calc(0.75s + var(--i));
             }
 
-            #open,
-            #open.s1 {
-                display: none;
+            .menu ul li a {
+                display: block;
+                font-size: 16px;
+                color: $white;
             }
-
-
-
         }
 
         .text {
             display: inline-block;
             text-align: left;
             margin-right: 25px;
-
+            @media (max-width:1399px) {
+                margin-right: 0;
+            }
             h2 {
                 margin-bottom: 0;
-
+    
                 a {
                     font-size: 24px;
                     font-family: $base-font;
@@ -1561,7 +1591,7 @@
                     font-weight: 700;
                 }
             }
-
+    
             span {
                 font-size: 17px;
                 font-family: $heading-font;
@@ -1569,6 +1599,7 @@
             }
         }
     }
+
 
     &:hover {
         .bg-shape {
@@ -1582,6 +1613,8 @@
         }
     }
 }
+
+
 
 /* qrest-newslatter-section */
 .qrest-newslatter-section {
@@ -1755,7 +1788,8 @@
 }
 
 /* qrest-blog-section */
-.qrest-blog-section,.qrest-blog-section-s2 {
+.qrest-blog-section,
+.qrest-blog-section-s2 {
     .qrest-section-title {
         padding: 0 80px;
 

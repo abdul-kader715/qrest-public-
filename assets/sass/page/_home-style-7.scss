@@ -125,7 +125,8 @@
         h2 {
             color: $white;
         }
-        p{
+
+        p {
             color: $white;
         }
     }
@@ -274,6 +275,142 @@
     }
 }
 
+/* qrest-choose-section-s4 */
+.qrest-choose-section-s4 {
+    position: relative;
+    z-index: 1;
+    .images {
+        position: absolute;
+        top: 27%;
+        right: 5%;
+    
+        .shape {
+            position: absolute;
+            left: -40px;
+            bottom: -4px;
+            z-index: -1;
+        }
+    }
+    .shape-11{
+        position: absolute;
+        right: 0;
+        top: 170px;
+        z-index: -1;
+    }
+}
+
+.choose-left {
+
+    .qrest-section-title-s7 {
+        text-align: left;
+        margin-bottom: 30px;
+        margin-right: 150px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.choose-left-item {
+
+    ul {
+        li {
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid $text-light-color-s2;
+            position: relative;
+            overflow: hidden;
+            width: 270px;
+            display: inline-block;
+            z-index: 1;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: $theme-primary-color-s7;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+                z-index: -1;
+            }
+
+            .icon {
+                border-radius: 12px;
+                background: $theme-primary-color-s7;
+                transition: all .3s ease-in-out;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                i {
+                    transition: all .3s ease-in-out;
+                    font-size: 40px;
+                    color: #fff;
+                }
+            }
+
+            h3 {
+                margin: 0;
+                margin-bottom: 15px;
+                transition: all .3s ease-in-out;
+                color: #222222;
+                font-size: 24px;
+                font-family: $heading-font;
+                margin-top: 25px;
+            }
+
+            p {
+                color: #636363;
+                margin-bottom: 0px;
+                transition: all .3s ease-in-out;
+                font-size: 17px;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .icon {
+                    background: $white;
+
+                    i {
+                        color: #1490fc;
+                    }
+                }
+
+                h3 {
+                    color: $white;
+                }
+
+                p {
+                    color: $white;
+                }
+            }
+
+        }
+    }
+}
+
+.choose-right {
+    text-align: right;
+}
+
+
+
+
 /* qrest-skill-area-s2 */
 .qrest-skill-area-s2 {
     background-color: rgb(34, 31, 60);
@@ -283,27 +420,32 @@
     border-top-right-radius: 900px 400px;
     overflow: hidden;
     padding-top: 440px;
+
     .qrest-section-title-s7 {
         text-align: left;
-        h2{
+
+        h2 {
             color: $white;
             margin-bottom: 10px;
             margin-right: 50px;
         }
-        p{
+
+        p {
             color: $white;
         }
     }
-    .progress-wrap{
+
+    .progress-wrap {
         .progress-bar {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            background: 
-              radial-gradient(closest-side, white 79%, transparent 80% 100%),
-              conic-gradient(hotpink 75%, pink 0);    
-          }
+            background:
+                radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                conic-gradient(hotpink 75%, pink 0);
+        }
     }
+
     ul {
         list-style: none;
         margin-bottom: 50px;
@@ -314,7 +456,7 @@
             font-size: 17px;
             font-family: $heading-font;
             line-height: 1.588;
-            color:$white;
+            color: $white;
 
             &::before {
                 content: "\eed8";
@@ -332,19 +474,21 @@
             }
         }
     }
-    
-    .skill-right-content{
-        .image{
+
+    .skill-right-content {
+        .image {
             position: relative;
             z-index: -1;
             overflow: hidden;
             border-radius: 50%;
-            img{
+
+            img {
                 width: 100%;
                 border-radius: 50%;
                 border: 20px solid $white;
             }
-            .round-shape{
+
+            .round-shape {
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
@@ -355,7 +499,8 @@
                 top: -172px;
             }
         }
-        .shape-1{
+
+        .shape-1 {
             width: 300px;
             height: 300px;
             border-radius: 50%;
@@ -367,19 +512,21 @@
         }
     }
 
-    .shape-10{
+    .shape-10 {
         position: absolute;
         left: 85px;
         bottom: 145px;
     }
-    .shape-11{
+
+    .shape-11 {
         position: absolute;
         right: 100px;
         top: 245px;
     }
-    .shape-12{
+
+    .shape-12 {
         position: absolute;
-       left: 290px;
+        left: 290px;
         top: 250px;
         width: 80px;
         height: 80px;
