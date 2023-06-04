@@ -87,9 +87,6 @@
 }
 
 
-
-
-
 .topbar .contact-intro ul {
 	float: left;
 	margin-bottom: 0;
@@ -199,6 +196,7 @@
 	@media (max-width:1399px) {
 		margin: 0px 40px;
 	}
+
 	@media (max-width:1199px) {
 		margin: 0px;
 	}
@@ -1336,6 +1334,63 @@
 
 .qrest-header-style-2 {
 
+	.topbar {
+		background: #f1f7fc;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			content: '';
+			width: 26%;
+			background: $theme-primary-color-s2;
+			z-index: -1;
+			clip-path: polygon(95% 0, 100% 47%, 95% 100%, 0 100%, 0 0);
+		}
+
+		.contact-intro ul {
+
+			li {
+				color: #636363;
+
+				i {
+
+					&::before {
+						color: $theme-primary-color;
+					}
+				}
+
+				&:first-child {
+					color: $white;
+
+					i {
+
+						&::before {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+
+		.contact-info ul li  {
+			border: 1px solid $theme-primary-color;
+			border-radius: 50%;
+			&:hover{
+				a{
+					color: $white;
+				}
+			}
+		}
+		.contact-info ul li a {
+			color: $theme-primary-color;
+		}
+	}
+}
 
 
+.header-style-s8 {
+	margin-top: 30px;
 }
