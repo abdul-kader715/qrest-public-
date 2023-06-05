@@ -1,0 +1,131 @@
+/* qrest-projects-details-section */
+.qrest-projects-details-section {
+
+    .project-all {
+        background: #f3f8fb;
+        padding: 50px 30px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 24px;
+            font-family: $heading-font;
+            color: #222222;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                background: $white;
+                margin-bottom: 20px;
+                padding: 15px;
+                padding-left: 35px;
+                
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &::before {
+                    position: absolute;
+                    content: "\eed7";
+                    font-family: IcoFont !important;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    left: 10px;
+                    top: 50%;
+                    border-radius: 50%;
+                    color: $theme-primary-color;
+                    transform: translateY(-50%);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                a {
+                    font-size: 17px;
+                    font-family: $heading-font;
+                    color: #333333;
+                    text-align: left;
+                    font-weight: 600;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover{
+                    background: $theme-primary-color;
+                    &::before {
+                        color: $white;
+                    }
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .image-top{
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 501px;
+        }
+    }
+    .image{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        @media (max-width:991px) {
+            margin-top: 50px;
+        }
+        img{
+            border-radius: 12px;
+            width: 100%;
+        }
+    }
+    .project-item{
+        margin-top: 35px;
+        @media (max-width:991px) {
+            margin-top: 15px;
+        }
+        ul {
+            list-style: none;
+
+            li {
+                
+                position: relative;
+                margin-bottom: 15px;
+                padding-left: 40px;
+                font-size: 16px;
+                font-family: $heading-font;
+                color: #636363;
+                text-align: left;
+                font-weight: 500;
+                
+                  
+                
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &::before {
+                    position: absolute;
+                    content: "\f00d";
+                    font-family: IcoFont !important;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    left:0;
+                    top: 50%;
+                    border-radius: 50%;
+                    color: $theme-primary-color;
+                    transform: translateY(-50%);
+                }
+
+               
+                
+            }
+        }
+    }
+}
