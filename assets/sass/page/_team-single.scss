@@ -1,0 +1,87 @@
+/* qrest-team-single-section */
+.qrest-team-single-section {
+
+    .team-img {
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+    .team-single {
+        h2 {
+            font-size: 24px;
+            font-family: $heading-font;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        span {
+            font-size: 17px;
+            font-family: $base-font;
+            color: #636363;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 17px;
+            font-family: $base-font;
+            color: #636363;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+        .team-info {
+            margin-top: 25px;
+
+            .single-info {
+                display: inline-block;
+                align-items: center;
+                width: 255px;
+                height: 60px;
+
+                .icon {
+                    display: inline;
+                    position: relative;
+                    top: -15px;
+
+                    i {
+                        font-size: 30px;
+                        color: $theme-primary-color;
+                    }
+                }
+
+                .text {
+                    margin-left: 15px;
+                    display: inline-block;
+
+                    h3 {
+                        font-size: 20px;
+                        font-family: $heading-font;
+                        color: #333333;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        font-size: 15px;
+                        font-family: $base-font;
+                        color: #636363;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    p {
+        font-size: 17px;
+        font-family: $base-font;
+        color: #636363;
+        line-height: 1.647;
+        margin-right: 50px;
+        margin: 0;
+        margin-top: 50px;
+    }
+}
