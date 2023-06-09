@@ -894,7 +894,6 @@
 					font-family: "themify";
 					content: "\e649";
 					font-size: 11px;
-					font-size: calc-rem-value(11);
 					position: absolute;
 					right: 15px;
 					top: 50%;
@@ -1335,20 +1334,24 @@
 .qrest-header-style-2 {
 
 	.topbar {
+		overflow: hidden;
 		background: #f1f7fc;
 		position: relative;
+		z-index: 1;
 
-		&::before {
+		.shape {
 			position: absolute;
-			left: 0;
+			left: -75px;
 			top: 0;
 			height: 100%;
-			content: '';
-			width: 26%;
-			background: $theme-primary-color-s2;
 			z-index: -1;
-			clip-path: polygon(95% 0, 100% 47%, 95% 100%, 0 100%, 0 0);
+
+			@media (max-width:991px) {
+				display: none;
+			}
 		}
+
+
 
 		.contact-intro ul {
 
@@ -1365,30 +1368,252 @@
 				&:first-child {
 					color: $white;
 
+					@media (max-width:991px) {
+						color: #636363;
+					}
+
 					i {
 
 						&::before {
 							color: $white;
+
+							@media (max-width:991px) {
+								color: #636363;
+							}
 						}
 					}
 				}
 			}
 		}
 
-		.contact-info ul li  {
+		.contact-info ul li {
 			border: 1px solid $theme-primary-color;
 			border-radius: 50%;
-			&:hover{
-				a{
+
+			&:hover {
+				a {
 					color: $white;
 				}
 			}
 		}
+
 		.contact-info ul li a {
 			color: $theme-primary-color;
 		}
 	}
+
+	.qrest-site-header {
+		margin: 0px 265px;
+
+		@media (max-width:1899px) {
+			margin: 0px 165px;
+		}
+
+		@media (max-width:1699px) {
+			margin: 0px 100px;
+		}
+
+		@media (max-width:1599px) {
+			margin: 0px 35px;
+		}
+
+		@media (max-width:1399px) {
+			margin: 0px;
+		}
+
+		#navbar {
+			right: -30px;
+
+			@media (max-width:1199px) {
+				right: -110px;
+			}
+		}
+
+		.header-right .close-form {
+			@media (max-width:767px) {
+				display: block;
+			}
+		}
+
+		.theme-btn-s2 {
+			@media (max-width:1399px) {
+				padding-right: 55px;
+			}
+
+			@media (max-width:1199px) {
+				padding-left: 0;
+				background: transparent;
+			}
+
+			span {
+
+				@media (max-width:1199px) {
+					display: none;
+				}
+			}
+
+			&::after {
+				@media (max-width:1199px) {
+					background: $theme-primary-color-s2;
+				}
+			}
+		}
+	}
 }
+
+
+/* qrest-header-style-3 */
+.qrest-header-style-3 {
+	background: transparent;
+
+	.topbar {
+		background: transparent;
+		border-bottom: 1px solid #2f323d;
+
+		.contact-info ul li {
+			border: 1px solid transparent;
+			border-radius: 50%;
+			background: transparent;
+			padding: 8px 9px;
+
+			@media (max-width:1200px) {
+				padding: 8px 9px;
+			}
+
+			@media (max-width:767px) {
+				padding: 8px 9px;
+			}
+
+			&:hover {
+				background: $theme-primary-color-s3;
+
+				a {
+					color: $white;
+				}
+			}
+		}
+
+		.contact-info ul li a {
+			color: $theme-primary-color-s3;
+		}
+	}
+
+	.qrest-site-header {
+		margin: 0;
+		background: transparent;
+
+		.navigation {
+			background: transparent;
+		}
+
+
+		.navbar-header .navbar-brand {
+			color: #fff;
+
+			i {
+				background: $theme-primary-color-s3;
+			}
+
+			span {
+				color: $theme-primary-color-s3;
+			}
+		}
+
+		#navbar {
+			right: 0px;
+
+			>ul li a:hover,
+			>ul li .active,
+			>ul li a:focus {
+				color: darken($theme-primary-color-s3, 5%);
+			}
+
+
+
+			>ul>li>a {
+				color: #232f4b;
+			}
+
+
+			>ul>li .sub-menu a {
+
+				&:after {
+					background: $theme-primary-color-s3;
+				}
+			}
+
+		}
+
+		#navbar>ul>li>a {
+			color: $white;
+		}
+
+		.header-right .search-toggle-btn {
+			color: $white;
+			border: 1px solid transparent;
+
+			i {
+				color: $white;
+			}
+		}
+
+		.cart-search-contact .fi {
+			color: $theme-primary-color-s3;
+		}
+
+		.header-right {
+			@media (max-width:1199px) {
+				right: -10px;
+			}
+
+			@media (max-width:767px) {
+				right: -20px;
+			}
+		}
+
+		.theme-btn-s3 {
+			@media (max-width:1199px) {
+				padding: 12px 12px;
+			}
+
+			@media (max-width:991px) {
+				font-size: 15px;
+			}
+		}
+
+
+		.mobail-menu button {
+			@media (max-width:991px) {
+				background: $theme-primary-color-s3;
+			}
+		}
+
+		.header-right>div:last-child {
+			@media (max-width:767px) {
+				display: none;
+			}
+		}
+
+		.header-right .search-toggle-btn {
+			border: 1px solid $theme-primary-color-s3;
+
+		}
+
+		.navigation.sticky-header {
+			background: #1a1e2a;
+		}
+
+		@media (max-width: 450px) {
+			.header-right>div {
+				margin-right: 0;
+			}
+
+		}
+	}
+
+
+}
+
 
 
 .header-style-s8 {

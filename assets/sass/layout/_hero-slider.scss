@@ -338,7 +338,8 @@
 	hero style 1
 --------------------------------------------*/
 .static-hero,
-.static-hero-style-2 {
+.static-hero-style-2,
+.static-hero-style-3 {
 	height: 990px;
 	display: flex;
 	position: relative;
@@ -373,7 +374,7 @@
 	.single-img {
 		position: absolute;
 		left: 57%;
-		top: 16%;
+		top: 0;
 		width: 100%;
 		height: 100%;
 		z-index: -1;
@@ -588,7 +589,9 @@
 	margin-top: 0;
 	height: 800px;
 
-
+	@media (max-width:1399px) {
+		height: 650px;
+	}
 
 	.text {
 		border-radius: 30px;
@@ -600,6 +603,22 @@
 		position: relative;
 		left: -100px;
 
+		@media (max-width:1499px) {
+			left: -40px;
+		}
+
+		@media (max-width:1399px) {
+			left: 0px;
+		}
+
+		@media (max-width:991px) {
+			margin-top: 0;
+		}
+
+		@media (max-width:767px) {
+			padding: 50px;
+		}
+
 		.sub-title {
 			font-size: 22px;
 			font-family: $heading-font;
@@ -608,9 +627,10 @@
 			border: transparent;
 			text-transform: capitalize;
 			font-weight: 700;
+			padding: 0;
 		}
-	
-		  
+
+
 		.title {
 
 			span {
@@ -620,13 +640,324 @@
 
 		p {
 			padding-right: 150px;
+
+			@media (max-width:767px) {
+				padding-right: 0;
+			}
+		}
+
+		.theme-btn-s2 {
+			@media (max-width:767px) {
+				padding: 15px 22px;
+				padding-right: 95px;
+			}
+
+			&::after {
+				@media (max-width:767px) {
+					font-size: 20px;
+					line-height: 40px;
+				}
+			}
 		}
 
 		.shape {
 			position: absolute;
 			right: 20px;
 			bottom: 0;
+
+			@media (max-width:767px) {
+				display: none;
+			}
 		}
 	}
 
+
+	.single-img {
+		position: absolute;
+		left: 53%;
+		top: 0;
+		width: 876px;
+		height: 100%;
+		z-index: -1;
+
+		@media (max-width:1599px) {
+			left: 50%;
+		}
+
+		@media (max-width:1499px) {
+			width: 800px;
+			top: 8%;
+		}
+
+		@media (max-width:1399px) {
+			width: 700px;
+			top: 2%;
+		}
+
+
+		@media (max-width:991px) {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+
+	}
+
+
+}
+
+/* static-hero-style-3 */
+.static-hero-style-3 {
+	height: 1030px;
+	z-index: 1;
+	background: transparent;
+	top: -60px;
+	left: 0;
+	width: 100%;
+	@media (max-width:1399px) {
+		height: 900px;
+	}
+	@media (max-width:991px) {
+		height: 800px;
+		top: -96px;
+	}
+	@media (max-width:767px) {
+		height: 650px;
+		top: -132px;
+	}
+
+	.overly {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(26, 30, 42);
+		border-bottom-right-radius: 602px 400px;
+		z-index: -1;
+
+		@media (max-width:1799px) {
+			border-bottom-right-radius: 267px 320px;
+		}
+
+		@media (max-width:1679px) {
+			border-bottom-right-radius: 200px 220px;
+		}
+		@media (max-width:1199px) {
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: rgb(26, 30, 42);
+		opacity: 0.439;
+		z-index: -11;
+		border-bottom-right-radius: 535px 320px;
+	}
+
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: rgb(26, 30, 42);
+		opacity: 0.722;
+		z-index: -11;
+		border-bottom-right-radius: 560px 355px;
+	}
+
+	.shape {
+		width: 240px;
+		height: 510px;
+		position: absolute;
+		left: -10px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background: #242733;
+			border-radius: 12px;
+			z-index: -1;
+		}
+
+		&::after {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			content: "";
+			width: 180px;
+			height: 430px;
+			background: #272b37;
+			border-radius: 12px;
+			z-index: -1;
+			transform: translateY(-50%);
+		}
+	}
+
+
+	.text {
+		@media (max-width:757px) {
+			margin-top: 150px;
+		}
+		.sub-title {
+			color: $white;
+			border: transparent;
+			padding: 0;
+			border-radius: 0;
+			font-size: 65px;
+			font-family: $heading-font;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin: 0;
+			@media (max-width:767px) {
+				font-size: 40px;
+			}
+			@media (max-width:575px) {
+				font-size: 30px;
+			}
+		}
+
+		.title {
+			margin: 0;
+			font-size: 147px;
+			font-family: $heading-font;
+			font-weight: 700;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: $theme-primary-color-s3;
+			margin-top: -35px;
+			margin-bottom: 30px;
+			@media (max-width:991px) {
+				font-size: 130px;
+			}
+			@media (max-width:767px) {
+				font-size: 100px;
+				margin-top: 0;
+			}
+			@media (max-width:575px) {
+				font-size: 70px;
+			}
+		}
+
+		p {
+			color: $white;
+		}
+
+	}
+
+	.hero-botom {
+
+
+		.video-item {
+
+			.video-btn-s2 {
+				display: inline-block;
+				width: 55px;
+				height: 55px;
+				line-height: 61px;
+				text-align: center;
+				background: $theme-primary-color-s3;
+				border-radius: 50%;
+				position: relative;
+
+
+				&:before {
+					position: absolute;
+					left: -8px;
+					top: -8px;
+					width: 130%;
+					height: 130%;
+					content: "";
+					border-radius: 50%;
+					z-index: -1;
+					border: 1px solid $theme-primary-color-s3;
+				}
+
+				&::after {
+					position: absolute;
+					left: -12px;
+					top: -13px;
+					width: 145%;
+					height: 145%;
+					content: "";
+					border-radius: 50%;
+					z-index: -1;
+					border: 1px solid $theme-primary-color-s3;
+				}
+
+				i {
+					font-size: 18px;
+					color: $white;
+				}
+
+			}
+		}
+
+		span {
+			font-size: 18px;
+			color: $white;
+			text-decoration: underline;
+			margin-left: 50px;
+		}
+	}
+
+	.single-img {
+		width: 600px;
+		height: 850px;
+		position: absolute;
+		right: 0;
+		top: 19%;
+		overflow: hidden;
+
+		@media (max-width:1399px) {
+			width: 500px;
+			height: 700px;
+			top: 28%;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			bottom: 101px;
+			content: "";
+			width: 570px;
+			height: 400px;
+			background: #242733;
+			z-index: -1;
+			transform: translateX(-50%);
+			clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+		}
+
+
+	}
+
+	.side-text-logo {
+		top: 262px;
+		right: -30px;
+
+		h2 {
+			-webkit-text-stroke-color: #434444;
+		}
+	}
 }

@@ -228,9 +228,6 @@
 
                 //active wow
                 wow.init();
-
-
-
             });
         }
     }
@@ -265,6 +262,30 @@
     -------------------------------------------*/
     if ($(".video-btn").length) {
         $(".video-btn").on("click", function () {
+            $.fancybox({
+                href: this.href,
+                type: $(this).data("type"),
+                'title': this.title,
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                    media: {}
+                },
+
+                beforeShow: function () {
+                    $(".fancybox-wrap").addClass("gallery-fancybox");
+                }
+            });
+            return false
+        });
+    }
+
+    /*------------------------------------------
+        = POPUP VIDEO
+    -------------------------------------------*/
+    if ($(".video-btn-s2").length) {
+        $(".video-btn-s2").on("click", function () {
             $.fancybox({
                 href: this.href,
                 type: $(this).data("type"),
@@ -591,6 +612,42 @@
             }
         });
     }
+
+    /*------------------------------------------
+            = brand SLIDER-s2
+    -------------------------------------------*/
+    if ($(".brand-slider-s2").length) {
+        $(".brand-slider-s2").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 30,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+
+                550: {
+                    items: 2
+                },
+
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+
+                1300: {
+                    items: 5
+                }
+            }
+        });
+    }
+
     /*------------------------------------------
             = project-slider
     -------------------------------------------*/
@@ -616,6 +673,41 @@
                     items: 4
                 },
 
+                1300: {
+                    items: 5
+                }
+            }
+        });
+
+    }
+    /*------------------------------------------
+            = project-slider-s1
+    -------------------------------------------*/
+    if ($(".project-slider-s1").length) {
+        $(".project-slider-s1").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 20,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: true,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 2
+                },
+
+                992: {
+                    items: 3
+                },
+
+                1100: {
+                    items: 4
+                },
                 1300: {
                     items: 5
                 }
@@ -697,6 +789,42 @@
             }
         });
     }
+
+ /*------------------------------------------
+            = team-slider-s3
+    -------------------------------------------*/
+    if ($(".team-slider-s3").length) {
+        $(".team-slider-s3").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 20,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: true,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 1
+                },
+
+                992: {
+                    items: 2
+                },
+
+                1300: {
+                    items: 3
+                }
+            }
+        });
+    }
+
+
+
+
 
     /*------------------------------------------
             = testimoniyal-slider

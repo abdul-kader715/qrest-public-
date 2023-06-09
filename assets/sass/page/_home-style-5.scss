@@ -2,10 +2,18 @@
 .qrest-about-section-s5 {
 
     .about-left-content {
+        @media (max-width:575px) {
+            margin-bottom: 60px;
+        }
 
         .about-img {
             max-width: 550px;
             max-height: 550px;
+
+            @media (max-width:767px) {
+                max-width: 450px;
+                max-height: 450px;
+            }
 
             img {
                 outline: 3px solid $theme-primary-color-s5;
@@ -16,6 +24,10 @@
 
         .about-img-1 {
             border: transparent;
+
+            @media (max-width:575px) {
+                display: none;
+            }
 
             img {
                 width: 100%;
@@ -35,9 +47,17 @@
         .shape-1 {
             left: -32px;
             bottom: 50%;
+
+            @media (max-width:575px) {
+                display: none;
+            }
         }
 
         .text {
+            @media (max-width:575px) {
+                right: 0;
+            }
+
             .info {
                 background: $theme-primary-color-s5;
             }
@@ -96,13 +116,33 @@
     background: url(../images/services/service-bg-img-5.jpg);
 
     .qrest-section-title-s5 {
+        h2 {
+            margin-top: 0;
+
+            @media (max-width:1199px) {
+                font-size: 35px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 25px;
+            }
+        }
+
         p {
             padding: 0 100px;
+
+            @media (max-width:1199px) {
+                padding: 0;
+            }
         }
     }
 
     .service-single-item {
         z-index: 1;
+
+        @media (max-width:1199px) {
+            padding: 15px 0;
+        }
 
         .icon {
             width: 110px;
@@ -141,6 +181,10 @@
         }
 
         .text {
+            @media (max-width:1199px) {
+                font-size: 35px;
+            }
+
             h2 {
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -156,11 +200,28 @@
 
 /* qrest-choose-area-s3 */
 .qrest-choose-area-s3 {
+    padding-bottom: 90px;
+
+    @media (max-width:991px) {
+        padding-bottom: 30px;
+    }
 
     .qrest-section-title-s5 {
         text-align: left;
 
         h2 {
+            @media (max-width:1199px) {
+                font-size: 37px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 35px;
+            }
+
+            @media (max-width:991px) {
+                font-size: 25px;
+            }
+
             &::before {
                 left: 57px;
             }
@@ -177,6 +238,18 @@
             box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.06);
             text-align: center;
             position: relative;
+
+            @media (max-width:1199px) {
+                padding: 20px 10px;
+            }
+
+            @media (max-width:991px) {
+                padding: 20px;
+            }
+
+            @media (max-width:575px) {
+                margin-bottom: 10px;
+            }
 
             &::before {
                 position: absolute;
@@ -204,6 +277,9 @@
                     font-size: 118px;
                     color: rgba(255, 255, 255, 0.102);
 
+                    @media (max-width:1199px) {
+                        font-size: 100px;
+                    }
                 }
             }
 
@@ -232,6 +308,10 @@
                 color: $heading-color;
                 font-weight: 700;
                 text-align: center;
+
+                @media (max-width:1199px) {
+                    font-size: 16px;
+                }
             }
 
             &.active {
@@ -298,6 +378,13 @@
             }
         }
     }
+
+    .choose-img {
+        @media (max-width:991px) {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
 }
 
 /* qrest-cta-section-s5 */
@@ -316,12 +403,28 @@
         h2 {
             font-size: 40px;
             color: $white;
+
+            @media (max-width:767px) {
+                font-size: 35px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 25px;
+            }
         }
 
         p {
             padding: 0 150px;
             color: $white;
             margin-bottom: 60px;
+
+            @media (max-width:991px) {
+                padding: 0;
+            }
+
+            @media (max-width:767px) {
+                margin-bottom: 30px;
+            }
         }
 
     }
@@ -329,14 +432,40 @@
 
 /* qrest-project-section-s5 */
 .qrest-project-section-s5 {
+    padding-bottom: 90px;
+
+    @media (max-width:991px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width:757px) {
+        padding-bottom: 50px;
+    }
 
     .project-wrap {
         margin: 0 140px;
-
+        @media (max-width:1699px) {
+            margin: 0 100px;  
+        }
+        @media (max-width:1599px) {
+            margin: 0 80px;  
+        }
+        @media (max-width:1499px) {
+            margin: 0 60px;  
+        }
+        @media (max-width:1399px) {
+            margin: 0 40px;  
+        }
+        @media (max-width:1199px) {
+            margin: 0px;  
+        }
+    
+        
         .project-single {
             position: relative;
             z-index: 1;
             overflow: hidden;
+            margin-bottom: 30px;
 
             &::before {
                 position: absolute;
@@ -366,7 +495,9 @@
                 left: 0;
                 bottom: 100%;
                 transition: all .3s ease-in-out;
-
+                @media (max-width:1199px) {
+                    padding: 20px;
+                }
                 h2 {
                     a {
                         font-size: 24px;
@@ -375,7 +506,12 @@
                         font-weight: 700;
                         transition: all .3s ease-in-out;
                         padding-left: 0px;
-
+                        @media (max-width:1199px) {
+                           font-size: 20px; 
+                        }
+                        @media (max-width:991px) {
+                           font-size: 25px; 
+                        }
                         &::before {
                             display: none;
                         }
@@ -442,7 +578,9 @@
 /* qrest-skill-section-s3 */
 .qrest-skill-section-s3 {
     padding-bottom: 0;
-
+    @media (max-width:991px) {
+        
+    }
     .qrest-skill-content {
         padding: 65px 45px;
         background: rgb(240, 246, 250);
@@ -615,6 +753,7 @@
 
     .video-item {
         background: $white;
+
         ul {
             list-style: none;
             display: flex;
@@ -658,13 +797,15 @@
             }
         }
     }
-    .images{
+
+    .images {
         width: 650px;
         height: 550px;
         border: 3px solid $white;
         position: absolute;
         left: 50%;
         bottom: 0;
+
         .video-item {
             display: inline-block;
             background: transparent;
@@ -672,7 +813,7 @@
             top: 20px;
             left: 20px;
         }
-    
+
         .video-btn {
             display: inline-block;
             width: 55px;
@@ -683,7 +824,7 @@
             border-radius: 50%;
             position: relative;
             z-index: 1;
-    
+
             &:before {
                 position: absolute;
                 left: -10px;
@@ -698,7 +839,7 @@
                 -webkit-animation: spineer 2s infinite;
                 animation: spineer 2s infinite;
             }
-    
+
             i {
                 font-size: 18px;
                 color: $white;
