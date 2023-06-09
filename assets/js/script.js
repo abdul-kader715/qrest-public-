@@ -130,6 +130,14 @@
         $(this).toggleClass('active');
     });
 
+    /*------------------------------------------
+        = TEAM SECTION
+    -------------------------------------------*/
+    var singleMember = $('.menuschol-s2');
+    singleMember.on('click', function () {
+        $(this).toggleClass('active');
+    });
+
 
     // Parallax background
     function bgParallax() {
