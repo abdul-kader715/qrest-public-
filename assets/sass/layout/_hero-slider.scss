@@ -339,7 +339,8 @@
 --------------------------------------------*/
 .static-hero,
 .static-hero-style-2,
-.static-hero-style-3 {
+.static-hero-style-3,
+.static-hero-style-4 {
 	height: 990px;
 	display: flex;
 	position: relative;
@@ -710,20 +711,24 @@
 }
 
 /* static-hero-style-3 */
-.static-hero-style-3 {
+.static-hero-style-3,
+.static-hero-style-4 {
 	height: 1030px;
 	z-index: 1;
 	background: transparent;
 	top: -60px;
 	left: 0;
 	width: 100%;
+
 	@media (max-width:1399px) {
 		height: 900px;
 	}
+
 	@media (max-width:991px) {
 		height: 800px;
 		top: -96px;
 	}
+
 	@media (max-width:767px) {
 		height: 650px;
 		top: -132px;
@@ -746,6 +751,7 @@
 		@media (max-width:1679px) {
 			border-bottom-right-radius: 200px 220px;
 		}
+
 		@media (max-width:1199px) {
 			border-bottom-right-radius: 0;
 		}
@@ -816,6 +822,7 @@
 		@media (max-width:757px) {
 			margin-top: 150px;
 		}
+
 		.sub-title {
 			color: $white;
 			border: transparent;
@@ -826,9 +833,11 @@
 			font-weight: 700;
 			text-transform: capitalize;
 			margin: 0;
+
 			@media (max-width:767px) {
 				font-size: 40px;
 			}
+
 			@media (max-width:575px) {
 				font-size: 30px;
 			}
@@ -844,13 +853,16 @@
 			-webkit-text-stroke-color: $theme-primary-color-s3;
 			margin-top: -35px;
 			margin-bottom: 30px;
+
 			@media (max-width:991px) {
 				font-size: 130px;
 			}
+
 			@media (max-width:767px) {
 				font-size: 100px;
 				margin-top: 0;
 			}
+
 			@media (max-width:575px) {
 				font-size: 70px;
 			}
@@ -959,5 +971,175 @@
 		h2 {
 			-webkit-text-stroke-color: #434444;
 		}
+	}
+}
+
+/* static-hero-style-4 */
+.static-hero-style-4 {
+	background-color: rgb(36, 37, 42);
+	height: 900px;
+	top: 0;
+	@media (max-width:991px) {
+		height: 600px;
+		top: 0;
+		margin-top: -101px;
+	}
+	@media (max-width:767px) {
+		height: 500px;
+	}
+	@media (max-width:575px) {
+		height: 550px;
+	}
+	&::before {
+		display: none;
+	}
+
+	&::after {
+		display: none;
+	}
+
+	.text {
+		margin-top: 150px;
+		@media (max-width:991px) {
+			margin-top: 80px;
+		}
+		@media (max-width:767px) {
+			margin-top: 50px;
+		}
+		@media (max-width:575px) {
+		
+		}
+		h2 {
+			font-size: 56px;
+			font-family: $heading-font;
+			color: $white;
+			font-weight: 700;
+			@media (max-width:1199px) {
+				font-size: 40px;
+			}
+			@media (max-width:767px) {
+				font-size: 30px;
+			}
+			
+		}
+
+	}
+
+	ul {
+		list-style: none;
+		margin-bottom: 40px;
+
+		li {
+			padding-left: 30px;
+			position: relative;
+			font-size: 17px;
+			font-family: $heading-font;
+			line-height: 1.588;
+			color: $white;
+
+			&::before {
+				content: "\eed8";
+				font-family: IcoFont !important;
+				width: 20px;
+				height: 20px;
+				top: 3px;
+				line-height: 22px;
+				border-radius: 100%;
+				color: $white;
+				text-align: center;
+				background: $theme-primary-color-s4;
+				left: 0;
+				position: absolute;
+			}
+
+		}
+	}
+
+	.theme-btn {
+		background: $theme-primary-color-s4;
+		padding: 15px 30px;
+
+		&:hover {
+			background: darken($theme-primary-color-s4, 8%);
+		}
+
+
+		@media (max-width:991px) {
+			font-size: 15px;
+		}
+	}
+
+	.image-s4 {
+		position: absolute;
+		right: 15%;
+		bottom: 20px;
+		width: 500px;
+		z-index: 1;
+
+		@media (max-width:1799px) {
+			right: 12%;
+		}
+
+		@media (max-width:1699px) {
+			right: 8%;
+		}
+		@media (max-width:1399px) {
+			right: 0;
+		}
+		@media (max-width:991px) {
+			display: none;
+		}
+		.shape-4 {
+			width: 400px;
+			height: 400px;
+			background: #eef0f4;
+			border-radius: 50%;
+			position: absolute;
+			top: -50px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -1;
+		}
+	}
+
+	.shape-41 {
+		position: absolute;
+		left: -200px;
+		top: 200px;
+		width: 150px;
+		z-index: -1;
+
+		@media (max-width:1799px) {
+			left: -150px;
+		}
+		@media (max-width:1499px) {
+			display: none;
+		}
+	}
+
+	.shape-img {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.shape-43 {
+		position: absolute;
+		left: -100px;
+		top: -100px;
+
+		@media (max-width:1599px) {
+			left: -150px;
+			top: -150px;
+		}
+		@media (max-width:1199px) {
+			display: none;
+		}
+	}
+
+	.shape-44 {
+		position: absolute;
+		bottom: -200px;
+		left: -300px;
 	}
 }

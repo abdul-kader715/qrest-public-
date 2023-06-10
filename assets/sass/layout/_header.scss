@@ -1614,7 +1614,162 @@
 
 }
 
+/* qrest-header-style-4 */
+.qrest-header-style-4 {
 
+	.qrest-site-header {
+		margin: 0;
+		background: transparent;
+
+		.navigation {
+			background: transparent;
+		}
+
+
+		.navbar-header .navbar-brand {
+			color: #fff;
+
+			i {
+				background: $theme-primary-color-s4;
+			}
+
+			span {
+				color: $theme-primary-color-s4;
+			}
+		}
+
+		#navbar {
+			right: -100px;
+
+			>ul li a:hover,
+			>ul li .active,
+			>ul li a:focus {
+				color: darken($theme-primary-color-s4, 5%);
+			}
+
+
+
+			>ul>li>a {
+				color: #232f4b;
+			}
+
+
+			>ul>li .sub-menu a {
+
+				&:after {
+					background: $theme-primary-color-s4;
+				}
+			}
+
+		}
+
+		#navbar>ul>li>a {
+			color: $white;
+		}
+
+		.header-right .search-toggle-btn {
+			color: $white;
+			border: 1px solid transparent;
+
+			i {
+				color: $white;
+			}
+		}
+
+		.cart-search-contact .fi {
+			color: $theme-primary-color-s4;
+		}
+
+		.header-right {
+			@media (max-width:1199px) {
+				right: -10px;
+			}
+
+			@media (max-width:767px) {
+				right: -20px;
+			}
+		}
+
+		.theme-btn {
+			background: $theme-primary-color-s4;
+
+			&:hover {
+				background: darken($theme-primary-color-s4, 8%);
+			}
+
+			@media (max-width:1199px) {
+				padding: 12px 12px;
+			}
+
+			@media (max-width:991px) {
+				font-size: 15px;
+			}
+		}
+
+
+		.mobail-menu button {
+			@media (max-width:991px) {
+				background: $theme-primary-color-s4;
+			}
+		}
+
+		.header-right>div:last-child {
+			@media (max-width:767px) {
+				display: none;
+			}
+		}
+
+		.header-right .search-toggle-btn {
+			border: 1px solid $theme-primary-color-s4;
+
+		}
+
+		.navigation.sticky-header {
+			background: #1a1e2a;
+		}
+
+		@media (max-width: 450px) {
+			.header-right>div {
+				margin-right: 0;
+			}
+
+		}
+
+
+		.header-right>div:last-child {
+			@media (max-width: 767px) {
+				display: block;
+			}
+		}
+
+		.header-right {
+			@media (max-width: 767px) {
+				right: 36px;
+				width: 121px;
+			}
+			@media (max-width: 575px) {
+				right: 55px;
+			}
+		}
+
+		.navbar-header .navbar-brand {
+			@media (max-width: 575px) {
+				font-size: 33px;
+				margin-right: 25px;
+
+			}
+		}
+
+		@media (max-width:575px){
+			.header-right .close-form .theme-btn{
+			  padding: 10px 15px;
+			  font-size: 12px;
+			}
+
+		}
+
+	}
+}
 
 .header-style-s8 {
 	margin-top: 30px;
