@@ -40,7 +40,7 @@
           }
         }
 
-        & + li {
+        &+li {
           margin-left: 20px;
           padding-left: 20px;
           position: relative;
@@ -120,6 +120,8 @@
 
     @include media-query(767px) {
       padding: 55px 25px;
+      margin: 0px;
+      margin-bottom: 20px;
     }
 
     &:before {
@@ -129,6 +131,9 @@
       top: 34px;
       width: 50px;
       height: 40px;
+      @include media-query(767px) {
+      display: none;
+      }
     }
 
     &::after {
@@ -176,6 +181,7 @@
         &:hover {
           color: $theme-primary-color;
           text-decoration: underline;
+
           &::before {
             background-color: $theme-primary-color;
           }
@@ -188,7 +194,7 @@
   .comments-area {
     margin-top: 70px;
 
-    li > div {
+    li>div {
       border-bottom: 1px solid #dddddd;
       padding: 35px;
       padding-left: 0;
@@ -219,7 +225,7 @@
       }
     }
 
-    li > div {
+    li>div {
       position: relative;
     }
 
@@ -227,6 +233,7 @@
       position: absolute;
       left: 0;
       top: 25%;
+
       @include media-query(767px) {
         position: static;
       }
@@ -255,6 +262,7 @@
         font-size: 24px;
         font-family: $base-font;
         color: #333333;
+
         @include media-query(991px) {
           font-size: 20px;
         }
@@ -299,12 +307,13 @@
       font-family: $heading-font;
       color: rgb(34, 34, 34);
       font-weight: 700;
-	  margin-bottom: 30px;
+      margin-bottom: 30px;
 
       @include media-query(991px) {
         font-size: 25px;
       }
     }
+
     .comment-reply-subtitle {
       font-size: 24px;
       font-family: $heading-font;
@@ -315,6 +324,7 @@
         font-size: 20px;
       }
     }
+
     .form-control {
       width: 100%;
       margin-bottom: 20px;
@@ -322,13 +332,16 @@
       font-size: 17px;
       font-family: "Rubik";
       color: rgb(99, 99, 99);
+
       &:focus {
         box-shadow: 0 0 0 0.25rem transparent;
       }
-	  &.s11{
-		height: 90px;
-	  }
+
+      &.s11 {
+        height: 90px;
+      }
     }
+
     .theme-btn {
       margin-top: 30px;
     }

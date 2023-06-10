@@ -68,7 +68,9 @@
                 width: 60px;
                 height: 60px;
             }
-
+            @media (max-width: 575px) {
+               border-radius: 0;
+            }
             i {
                 font-size: 30px;
                 color: $white;
@@ -139,6 +141,15 @@
         @media (max-width:1199px) {
             display: none;
         }
+    }
+    &.s2{
+        @media (max-width:991px) {
+            padding-top: 90px;
+        }
+        @media (max-width:767px) {
+            padding-top: 80px;
+        }
+    
     }
 }
 
@@ -259,6 +270,10 @@
                 font-size: 37px;
                 line-height: 50px;
             }
+            @media (max-width:575px) {
+                font-size: 31px;
+                line-height: 44px;
+            }
         }
 
         p {
@@ -331,6 +346,9 @@
         overflow: hidden;
         margin-top: 30px;
         margin-bottom: 40px;
+        @media (max-width:575px) {
+            width: 300px;
+        }
 
         .qu {
             position: absolute;
@@ -417,6 +435,7 @@
         z-index: -1;
         opacity: 0;
         visibility: hidden;
+       
 
         &::before {
             position: absolute;
@@ -432,6 +451,10 @@
 
         img {
             width: 100%;
+            object-fit: cover;
+            @media (max-width:1399px) {
+                height: 420px;
+            }
         }
     }
 
@@ -574,7 +597,9 @@
     .qrest-section-title {
         margin-bottom: 15px;
         margin-right: 50px;
-
+        @media (max-width:991px) {
+          margin-right: 0;
+        }
         span {
             left: 15px;
         }
@@ -658,7 +683,9 @@
         .accordion-body {
             display: flex;
             align-items: center;
-
+@media (max-width:575px) {
+    display: block;
+}
             .image {
                 width: 120px;
 
@@ -669,7 +696,9 @@
 
             .text {
                 width: calc(100% - 120px);
-
+                @media (max-width:575px) {
+                    width: 100%;
+                }
                 p {
                     font-size: 17px;
                     font-family: $heading-font;
@@ -682,6 +711,10 @@
 
                     @media (max-width:1199px) {
                         padding-right: 0;
+                    }
+                    @media (max-width:575px) {
+                      padding-left: 0;
+                      padding-top: 10px;
                     }
                 }
             }
@@ -896,7 +929,7 @@
         }
     }
 
-    .cta-btn {
+    .cta-btn-1 {
 
         .theme-btn {
             @media (max-width:1199px) {
@@ -1290,7 +1323,7 @@
 
 
 /* qrest-brand-section  */
-.qrest-brand-section {
+.qrest-brand-section,.qrest-brand-section-s02 {
     position: relative;
     background: #f3f8fb;
     overflow: hidden;
@@ -1461,6 +1494,10 @@
         align-items: center;
         justify-content: end;
         position: relative;
+        @media (max-width:575px) {
+            display: block;
+            margin-top: 20px;
+        }
 
 
         .sochal-item{
@@ -1468,8 +1505,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-
+            @media (max-width:575px) {
+               justify-content: left;
+            }
             .menuschol {
                 position: relative;
                 width: 40px;
@@ -1483,6 +1521,9 @@
                 color: $white;
                 margin-right: 20px;
                 z-index: 11;
+                @media (max-width:330px) {
+                    margin-right: 25px;
+                }
 
                 &.active {
                     background-color: $theme-primary-color-s2;
@@ -1515,6 +1556,10 @@
                 visibility: hidden;
                 @media (max-width:991px) {
                     left: -210px;
+                }
+                @media (max-width:575px) {
+                   left: 50%;
+                   transform: translateX(-50%);
                 }
             }
 
@@ -1580,6 +1625,9 @@
             margin-right: 25px;
             @media (max-width:1399px) {
                 margin-right: 0;
+            }
+            @media (max-width:575px) {
+                margin-top: 10px;
             }
             h2 {
                 margin-bottom: 0;
@@ -1885,6 +1933,9 @@
                 color: $text-light-color;
                 background: $white;
                 text-transform: capitalize;
+                @media (max-width:399px) {
+                    padding: 10px 10px;  
+                }
             }
         }
 

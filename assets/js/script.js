@@ -120,7 +120,7 @@
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
-  
+
 
     /*------------------------------------------
         = TEAM SECTION
@@ -635,7 +635,7 @@
             arrows: false,
             responsive: {
                 0: {
-                    items: 2
+                    items: 1
                 },
 
                 550: {
@@ -735,6 +735,21 @@
     });
 
     /*------------------------------------------
+            = hero-slider
+    -------------------------------------------*/
+
+
+    $('.hero-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        // fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        arrows:false
+    });
+
+    /*------------------------------------------
             = team-slider
     -------------------------------------------*/
     if ($(".team-slider").length) {
@@ -786,6 +801,9 @@
                 550: {
                     items: 1
                 },
+                768: {
+                    items: 2
+                },
 
                 992: {
                     items: 2
@@ -798,9 +816,9 @@
         });
     }
 
- /*------------------------------------------
-            = team-slider-s3
-    -------------------------------------------*/
+    /*------------------------------------------
+               = team-slider-s3
+       -------------------------------------------*/
     if ($(".team-slider-s3").length) {
         $(".team-slider-s3").owlCarousel({
             autoplay: false,
@@ -844,7 +862,7 @@
             margin: 20,
             loop: true,
             autoplayHoverPause: true,
-            dots: false,
+            dots: true,
             arrows: false,
             responsive: {
                 0: {

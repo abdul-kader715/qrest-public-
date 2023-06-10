@@ -59,8 +59,8 @@
 			line-height: 40px;
 		}
 
-		@include media-query(330px) {
-			font-size: 30px;
+		@include media-query(575px) {
+			font-size: 25px;
 		}
 
 	}
@@ -332,7 +332,9 @@
 		color: $white;
 		font-weight: 700;
 		text-transform: uppercase;
-
+		@media (max-width:991px) {
+			font-size: 18px;
+		}
 		.color {
 			color: $theme-primary-color-s6;
 		}
@@ -386,7 +388,6 @@
 	}
 
 	
-
 	h2 {
 		font-size: 35px;
 		line-height: 55px;
@@ -395,7 +396,6 @@
 		text-transform: capitalize;
 		font-family: $heading-font-s2;
 		font-weight: 600;
-		margin-top: 10px;
 		margin-bottom: 20px;
 		color: #222222;
 

@@ -80,7 +80,15 @@
 		top: 55%;
 		transform: translate(-50%, -50%);
 		z-index: 1;
-
+		@media (max-width:1499px) {
+			right: -5%;
+		}
+		@media (max-width:1199px) {
+			right: -11%;
+		}
+		@media (max-width:767px) {
+			display: none;
+		}
 		.shape {
 			position: absolute;
 			left: 50%;

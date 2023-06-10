@@ -148,13 +148,22 @@
                 margin-right: 0px;
                 font-size: 38px;
             }
+
+            @media (max-width:767px) {
+                font-size: 30px;
+            }
         }
     }
+
 
     .about-support {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+        @media (max-width:575px) {
+            display: block;
+        }
 
         .about-btn,
         .about-btn-s2 {
@@ -177,6 +186,11 @@
             background-color: #f4f5f9;
             color: $small-black;
             margin-left: 25px;
+
+            @media (max-width:575px) {
+                margin-left: 0;
+                margin-top: 10px;
+            }
 
             i {
                 color: $theme-primary-color;
@@ -224,6 +238,10 @@
 
         @media (max-width:767px) {
             right: 20px;
+        }
+
+        @media (max-width:400px) {
+            display: none;
         }
 
         .info {
@@ -1104,7 +1122,20 @@
     }
 }
 
-
+.qrest-brand-section-s02 {
+    background: $white;
+    padding-top: 120px;
+    @media (max-width:991px) {
+       padding-top: 90px;
+    }
+    @media (max-width:767px) {
+       padding-top: 80px;
+    }
+    .grid {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
 
 /* qrest-blog-section-s2 */
 .qrest-blog-section-s2 {
@@ -1126,6 +1157,7 @@
             margin-top: 30px;
         }
     }
+
     .blog-card-single {
         .card-text {
             background-color: rgb(241, 247, 252);
@@ -1142,9 +1174,11 @@
                 @media (max-width:1399px) {
                     right: -46px;
                 }
+
                 @media (max-width:1199px) {
                     right: -145px;
                 }
+
                 @media (max-width:991px) {
                     right: 0px;
                 }
@@ -1197,6 +1231,9 @@
         width: 25px;
         background: $theme-primary-color-s2;
         border-radius: 12px;
+        @media (max-width:399px) {
+            width: 15px;
+        }
     }
 
     .owl-dots button.owl-dot.active {
