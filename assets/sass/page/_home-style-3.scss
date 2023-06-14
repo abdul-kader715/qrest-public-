@@ -1,4 +1,8 @@
-/* qrest-about-section-s3 */
+/* 6. Home-style-3 */
+
+
+
+/*6.1 qrest-about-section-s3 */
 .qrest-about-section-s3 {
     position: relative;
     padding-top: 65px;
@@ -135,7 +139,7 @@
     }
 }
 
-/* qrest-service-section-s3 */
+/*6.2 qrest-service-section-s3 */
 .qrest-service-section-s3 {
     background: #1a1e2a;
     position: relative;
@@ -288,7 +292,7 @@
     }
 }
 
-/* qrest-skill-area */
+/*6.3 qrest-skill-area */
 .qrest-skill-area {
     .qrest-section-title-s3 {
         text-align: left;
@@ -514,7 +518,7 @@
 }
 
 
-/* qrest-fun-fact-area-s2 */
+/*6.4 qrest-fun-fact-area-s2 */
 .qrest-fun-fact-area-s2 {
     position: relative;
     z-index: 1;
@@ -705,7 +709,7 @@
     }
 }
 
-/* qrest-cta-section-s2 */
+/*6.5 qrest-cta-section-s2 */
 .qrest-cta-section-s2 {
     position: relative;
     background: url(../images/cta/bg-2.jpg);
@@ -815,7 +819,7 @@
     }
 }
 
-/* qrest-team-section-s3 */
+/*6.6 qrest-team-section-s3 */
 .qrest-team-section-s3 {
     .team-single-content {
         border-radius: 10px;
@@ -950,7 +954,7 @@
     }
 }
 
-/* qrest-compny-solution-section */
+/*6.7 qrest-compny-solution-section */
 .qrest-compny-solution-section {
     position: relative;
     z-index: 1;
@@ -1032,10 +1036,10 @@
             padding-left: 30px;
             position: relative;
             font-size: 17px;
-            font-family: $heading-font;
             color: $heading-font;
             line-height: 1.588;
             color: #fdfdff;
+            margin-bottom: 15px;
 
 
             &::before {
@@ -1057,7 +1061,7 @@
     }
 }
 
-/* qrest-blog-section-s3 */
+/*6.8 qrest-blog-section-s3 */
 .qrest-blog-section-s3 {
     .blog-card-single {
         position: relative;

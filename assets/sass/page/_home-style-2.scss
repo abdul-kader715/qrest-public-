@@ -1,6 +1,6 @@
-/* 4. home style 2 */
+/* 5. Home-style-2 */
 
-/* qrest-categorie-area */
+/*5.1 qrest-categorie-area */
 .qrest-categorie-area {
     @media (max-width:991px) {
         padding-top: 90px;
@@ -125,8 +125,7 @@
 }
 
 
-
-/* qrest-about-section-s2 */
+/*5.2 qrest-about-section-s2 */
 .qrest-about-section-s2 {
     padding-top: 130px;
 
@@ -204,6 +203,7 @@
         ul {
             li {
                 padding-left: 45px;
+                margin-bottom: 15px;
 
                 @media (max-width:1199px) {
                     font-size: 15px;
@@ -217,6 +217,7 @@
                     height: 30px;
                     line-height: 30px;
                     border-radius: 100%;
+                    padding-left: 3px;
                     color: $white;
                     text-align: center;
                 }
@@ -273,9 +274,7 @@
     }
 }
 
-
-
-/* qrest-service-section-s2 */
+/*5.3 qrest-service-section-s2 */
 .qrest-service-section-s2 {
     background-color: rgb(241, 247, 252);
     padding-bottom: 95px;
@@ -428,9 +427,7 @@
     }
 }
 
-
-
-/* qrest-project-section */
+/*5.4 qrest-project-section */
 .qrest-project-section {
     padding-bottom: 0;
 
@@ -570,9 +567,7 @@
     }
 }
 
-
-
-/* qrest-choose-section */
+/*5.5 qrest-choose-section */
 .qrest-choose-section {
     border-top: 1px solid #dddddd;
     position: relative;
@@ -702,9 +697,7 @@
     }
 }
 
-
-
-/* qrest-fun-fact-area */
+/*5.6 qrest-fun-fact-area */
 .qrest-fun-fact-area {
     padding-top: 150px;
 
@@ -824,8 +817,7 @@
 }
 
 
-
-/* qrest-team-section-s2 */
+/*5.7 qrest-team-section-s2 */
 .qrest-team-section-s2 {
     border-top: 1px solid $border-color;
 
@@ -986,8 +978,7 @@
 }
 
 
-
-/* qrest-appointment-area */
+/*5.8 qrest-appointment-area */
 .qrest-appointment-area {
     position: relative;
 
@@ -1137,7 +1128,7 @@
     }
 }
 
-/* qrest-blog-section-s2 */
+/*5.9 qrest-blog-section-s2 */
 .qrest-blog-section-s2 {
     .qrest-section-title-s2 {
         @media (max-width:991px) {

@@ -1,4 +1,4 @@
-/* qrest-contact-section */
+/*15 qrest-contact-section */
 .qrest-contact-section {
 
     .contact-wrap {
@@ -72,10 +72,10 @@
 }
 
 .g-map {
-    #gmap_canvas {
+    iframe{
         height: 400px;
         width: 100%;
         border-radius: 10px;
         margin-bottom: 30px;
-    }
+        }
 }

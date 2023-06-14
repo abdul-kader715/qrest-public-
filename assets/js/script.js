@@ -355,7 +355,7 @@
             });
 
             $(".gallery-filters li").on("click", function () {
-                $('.gallery-filters li .current').removeClass('current');
+                $('.gallery-filters li ').removeClass('current');
                 $(this).addClass('current');
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
@@ -573,21 +573,46 @@
             }
         });
     }
+
     /*------------------------------------------
         = Testimonial SLIDER
     -------------------------------------------*/
-    if ($(".qrest-happy-client-slide").length) {
-        $(".qrest-happy-client-slide").owlCarousel({
-            autoplay: true,
+    if ($(".qrest-service-slider-s5").length) {
+        $(".qrest-service-slider-s5").owlCarousel({
+            autoplay: false,
             smartSpeed: 300,
-            margin: 0,
+            margin: 20,
             loop: true,
             autoplayHoverPause: true,
-            dots: false,
+            dots: true,
             nav: false,
-            items: 4
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: true,
+                    nav: false
+                },
+
+                500: {
+                    items: 1,
+                    dots: true,
+                    nav: false
+                },
+
+                768: {
+                    items: 2,
+                },
+
+                1200: {
+                    items: 3
+                },
+
+                
+
+            }
         });
     }
+ 
 
     /*------------------------------------------
             = brand SLIDER
@@ -599,11 +624,11 @@
             margin: 30,
             loop: true,
             autoplayHoverPause: true,
-            dots: false,
+            dots: true,
             arrows: false,
             responsive: {
                 0: {
-                    items: 2
+                    items: 1
                 },
 
                 550: {
@@ -626,6 +651,40 @@
     -------------------------------------------*/
     if ($(".brand-slider-s2").length) {
         $(".brand-slider-s2").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 30,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 2
+                },
+
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+
+                1300: {
+                    items: 5
+                }
+            }
+        });
+    }
+    /*------------------------------------------
+            = brand SLIDER-s2
+    -------------------------------------------*/
+    if ($(".brand-slider-s3").length) {
+        $(".brand-slider-s3").owlCarousel({
             autoplay: false,
             smartSpeed: 300,
             margin: 30,
@@ -719,6 +778,38 @@
                 1300: {
                     items: 5
                 }
+            }
+        });
+    }
+    /*------------------------------------------
+            = project-slider-s5
+    -------------------------------------------*/
+    if ($(".project-slider-s5").length) {
+        $(".project-slider-s5").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 20,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: true,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 2
+                },
+
+                992: {
+                    items: 3
+                },
+
+                1200: {
+                    items: 4
+                },
+                
             }
         });
     }

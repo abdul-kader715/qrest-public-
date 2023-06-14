@@ -1,4 +1,7 @@
-/* qrest-about-section-s7 */
+/* 10. Home-style-7 */
+
+
+/*10.1 qrest-about-section-s7 */
 
 .qrest-about-section-s7 {
     position: relative;
@@ -194,7 +197,7 @@
     }
 }
 
-/* qrest-service-section-s7 */
+/*10.2 qrest-service-section-s7 */
 .qrest-service-section-s7 {
     background-color: rgb(34, 31, 60);
     border-bottom-left-radius: 900px 400px;
@@ -389,7 +392,7 @@
     }
 }
 
-/* qrest-choose-section-s4 */
+/*10.3 qrest-choose-section-s4 */
 .qrest-choose-section-s4 {
     position: relative;
     z-index: 1;
@@ -480,7 +483,7 @@
             border: 1px solid $text-light-color-s2;
             position: relative;
             overflow: hidden;
-            width: 270px;
+            width:45%;
             display: inline-block;
             z-index: 1;
             margin-right: 15px;
@@ -592,7 +595,7 @@
     }
 }
 
-/* qrest-video-area-s2 */
+/*10.4 qrest-video-area-s2 */
 .qrest-video-area-s2 {
     height: 100%;
     background: url(../images/video-bg-3.jpg);
@@ -668,7 +671,7 @@
 
 }
 
-/* qrest-portfolio-area-section-s7 */
+/*10.5 qrest-portfolio-area-section-s7 */
 .qrest-portfolio-area-section-s7 {
 
     .portfolio-wrap {
@@ -802,7 +805,7 @@
     }
 }
 
-/* qrest-cta-section-s7 */
+/*10.6 qrest-cta-section-s7 */
 .qrest-cta-section-s7 {
     background: url(../images/cta/bg-4.jpg);
 
@@ -819,7 +822,7 @@
     }
 }
 
-/* qrest-team-section-s5 */
+/*10.7 qrest-team-section-s5 */
 .qrest-team-section-s5 {
     position: relative;
     z-index: 1;
@@ -839,12 +842,27 @@
             position: relative;
             z-index: 1;
             margin-bottom: 30px;
-
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: '';
+                left: -50px;
+                top: -100px;
+                width: 200px;
+                height: 200px;
+                border: 15px solid rgb(7, 130, 201);
+                border-radius: 50%;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease-in-out;
+                z-index: 1;
+            }
             .image {
                 background: #d7d7d7;
-
+                transition: all .3s ease-in-out;
                 img {
                     width: 100%;
+                    transition: all .3s ease-in-out;
                 }
             }
 
@@ -963,11 +981,22 @@
                     }
                 }
             }
+            &:hover{
+                &::before{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .image {
+                    img {
+                        filter: grayscale(100%);
+                    }
+                }
+            }
         }
     }
 }
 
-/* qrest-skill-area-s2 */
+/*10.8 qrest-skill-area-s2 */
 .qrest-skill-area-s2 {
     background-color: rgb(34, 31, 60);
     position: relative;
@@ -1182,8 +1211,7 @@
     }
 }
 
-
-/* qrest-blog-section-s7 */
+/*10.9 qrest-blog-section-s7 */
 .qrest-blog-section-s7 {
     padding-bottom: 90px;
     @media (max-width:991px) {

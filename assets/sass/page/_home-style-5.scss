@@ -1,4 +1,6 @@
-/* qrest-about-section-s5 */
+/* 8. Home-style-5 */
+
+/*8.1 qrest-about-section-s5 */
 .qrest-about-section-s5 {
 
     .about-left-content {
@@ -111,7 +113,7 @@
 }
 
 
-/* qrest-service-section-s5 */
+/*8.2 qrest-service-section-s5 */
 .qrest-service-section-s5 {
     background: url(../images/services/service-bg-img-5.jpg);
 
@@ -139,7 +141,7 @@
 
     .service-single-item {
         z-index: 1;
-
+        box-shadow: 0px 0px 120px 0px transparent;
         @media (max-width:1199px) {
             padding: 15px 0;
         }
@@ -196,9 +198,35 @@
             }
         }
     }
+     .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .owl-dots button.owl-dot {
+        width: 10px;
+        height: 13px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #a4b6c0;
+        margin: 0 7px;
+        position: relative;
+        border: 0;
+        @media (max-width:1399px) {
+            height: 10px;
+        }
+    }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color-s5;
+    }
 }
 
-/* qrest-choose-area-s3 */
+/*8.3 qrest-choose-area-s3 */
 .qrest-choose-area-s3 {
     padding-bottom: 90px;
 
@@ -290,6 +318,7 @@
                 margin: 0 auto;
                 background: $theme-primary-color-s5;
                 transition: all .3s ease-in-out;
+                display: block;
 
                 i {
                     font-size: 30px;
@@ -300,7 +329,7 @@
                 }
             }
 
-            h3 {
+            strong {
                 margin-top: 20px;
                 margin-bottom: 0;
                 font-size: 20px;
@@ -334,7 +363,7 @@
                     }
                 }
 
-                h3 {
+                strong{
                     color: $white;
                 }
             }
@@ -387,7 +416,7 @@
     }
 }
 
-/* qrest-cta-section-s5 */
+/*8.4 qrest-cta-section-s5 */
 .qrest-cta-section-s5 {
     background: url(../images/cta/bg-3.jpg);
     background-repeat: no-repeat;
@@ -430,7 +459,7 @@
     }
 }
 
-/* qrest-project-section-s5 */
+/*8.5 qrest-project-section-s5 */
 .qrest-project-section-s5 {
     padding-bottom: 90px;
 
@@ -583,9 +612,34 @@
             }
         }
     }
+    .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        text-align: center;
+    }
+
+    .owl-dots button.owl-dot {
+        width: 10px;
+        height: 13px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #a4b6c0;
+        margin: 0 7px;
+        position: relative;
+        border: 0;
+        @media (max-width:1399px) {
+            height: 10px;
+        }
+    }
+
+    .owl-dots button.owl-dot.active {
+        background-color: $theme-primary-color-s5;
+    }
 }
 
-/* qrest-skill-section-s3 */
+/*8.6 qrest-skill-section-s3 */
 .qrest-skill-section-s3 {
     padding-bottom: 0;
 
@@ -661,7 +715,7 @@
     }
 }
 
-/* qrest-work-section */
+/*8.7 qrest-work-section */
 .qrest-work-section {
     padding-top: 0;
 
@@ -769,7 +823,7 @@
 
 }
 
-/* qrest-video-section */
+/*8.8 qrest-video-section */
 .qrest-video-section {
     position: relative;
     z-index: 1;
@@ -935,8 +989,8 @@
             display: inline-block;
             background: transparent;
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 55px;
+            left: 55px;
         }
 
         .video-btn {
@@ -973,7 +1027,7 @@
     }
 }
 
-/* qrest-appointment-area-s2 */
+/*8.9 qrest-appointment-area-s2 */
 .qrest-appointment-area-s2 {
     &::before {
         display: none;
@@ -1034,8 +1088,7 @@
     }
 }
 
-/* qrest-blog-section-s5 */
-
+/*8.10 qrest-blog-section-s5 */
 .qrest-blog-section-s5 {
     background: url(../images/blog/blog-bg.jpg);
     background-position: center;
@@ -1095,14 +1148,21 @@
     }
 
     .owl-dots button.owl-dot {
-        background: #9bb1be;
-
-        @media (max-width:399px) {
-            width: 16px;
+        width: 10px;
+        height: 13px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #a4b6c0;
+        margin: 0 7px;
+        position: relative;
+        border: 0;
+        @media (max-width:1399px) {
+            height: 10px;
         }
     }
 
     .owl-dots button.owl-dot.active {
         background-color: $theme-primary-color-s5;
+        width: 10px;
     }
 }

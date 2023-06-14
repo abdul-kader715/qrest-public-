@@ -1,8 +1,6 @@
-.homer-s6 {
-    background: #121214;
-}
+/* 9. Home-style-6 */
 
-/* qrest-service-section-s6 */
+/*9.1 qrest-service-section-s6 */
 .qrest-service-section-s6 {
     padding-bottom: 95px;
 
@@ -176,7 +174,7 @@
     }
 }
 
-/* qrest-fun-fact-area-s3 */
+/*9.2 qrest-fun-fact-area-s3 */
 .qrest-fun-fact-area-s3 {
     background: url(../images/fun-fact-bg-2.jpg);
     background-repeat: no-repeat;
@@ -194,12 +192,14 @@
     }
 }
 
-/* qrest-about-section-s6 */
+/*9.3 qrest-about-section-s6 */
 .qrest-about-section-s6 {
 
     .about-left-content {
+        margin-right: 30px;
         @include media-query(991px) {
             display: none;
+            margin-right: 0px;
         }
 
         .about-imags {
@@ -250,6 +250,7 @@
                 font-family: $heading-font;
                 line-height: 1.588;
                 color: $text-light-color-s2;
+                margin-bottom: 10px;
 
                 @include media-query(575px) {
                     font-size: 15px;
@@ -298,7 +299,7 @@
     }
 }
 
-/* .qrest-features-s6 */
+/*9.4 .qrest-features-s6 */
 .qrest-features-s6 {
     border-top: 1px solid #3b3b3c;
     padding-bottom: 90px;
@@ -510,8 +511,7 @@
     }
 }
 
-
-/* qrest-portfolio-area-section-s6 */
+/*9.5 qrest-portfolio-area-section-s6 */
 .qrest-portfolio-area-section-s6 {
     padding-top: 0;
 
@@ -524,7 +524,7 @@
         background-position: center;
 
         &::before {
-            background: $theme-primary-color-s6;
+            background: $theme-primary-color-s2;
             opacity: 0.831;
         }
     }
@@ -570,6 +570,9 @@
             text-align: center;
             margin-top: 10px;
         }
+        &.current{
+            background: $theme-primary-color-s6;
+        }
     }
     .portfolio-wrap {
 
@@ -598,7 +601,7 @@
 
 }
 
-/* qrest-video-section-s3 */
+/*9.6 qrest-video-section-s3 */
 .qrest-video-section-s3 {
     position: relative;
     z-index: 1;
@@ -631,7 +634,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(57, 155, 6);
+        background-color: $theme-primary-color-s2;
         opacity: 0.851;
         z-index: -1;
     }
@@ -701,7 +704,7 @@
     }
 }
 
-/* qrest-testimoniyal-section */
+/*9.7 qrest-testimoniyal-section */
 .qrest-testimoniyal-section {
     .qrest-section-title-s6 {
         text-align: left;
@@ -831,7 +834,7 @@
     }
 }
 
-/* qrest-newslatter-section-s2 */
+/*9.8 qrest-newslatter-section-s2 */
 .qrest-newslatter-section-s2 {
     padding: 110px 0;
     background: url(../images/newslatter/bg-s2.jpg);
@@ -893,7 +896,7 @@
     }
 }
 
-/* qrest-blog-section-s6 */
+/*9.9 qrest-blog-section-s6 */
 .qrest-blog-section-s6 {
 
     .qrest-section-title-s6 {
