@@ -1031,16 +1031,21 @@
         left: 10%;
         top: -49px;
 
+        @media (max-width:1559px) {
+            left: 5%;
+        }
         @media (max-width:1449px) {
-            left: 6%;
+            left: 0%;
         }
 
         @media (max-width:1300px) {
-            left: 2%;
+            left: 0%;
         }
 
         @media (max-width:1199px) {
             left: -80px;
+            width: 550px;
+            top: 0px;
         }
 
         @media (max-width:991px) {

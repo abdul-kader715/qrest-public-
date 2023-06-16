@@ -4458,6 +4458,11 @@ img {
     margin-top: 50px;
   }
 }
+@media (max-width: 575px) {
+  .static-hero-style-4 .text {
+    margin-top: 100px;
+  }
+}
 .static-hero-style-4 .text h2 {
   font-size: 56px;
   font-family: "Rubik", sans-serif;
@@ -4485,6 +4490,7 @@ img {
   font-family: "Rubik", sans-serif;
   line-height: 1.588;
   color: #fff;
+  margin-bottom: 10px;
 }
 .static-hero-style-4 ul li::before {
   content: "\eed8";
@@ -4592,6 +4598,105 @@ img {
   position: absolute;
   bottom: -200px;
   left: -300px;
+}
+.static-hero-style-4 .progressbar-hero {
+  position: absolute;
+  right: 1%;
+  top: 34%;
+  z-index: 1;
+  background: rgb(238, 240, 244);
+  width: 350px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+}
+@media (max-width: 1699px) {
+  .static-hero-style-4 .progressbar-hero {
+    width: 280px;
+    right: 0%;
+  }
+}
+@media (max-width: 1499px) {
+  .static-hero-style-4 .progressbar-hero {
+    width: 270px;
+    right: 0%;
+  }
+}
+@media (max-width: 1399px) {
+  .static-hero-style-4 .progressbar-hero {
+    display: none;
+  }
+}
+.static-hero-style-4 .progressbar-hero .progre-text {
+  margin-left: 10px;
+}
+.static-hero-style-4 .progressbar-hero .progre-text h4 {
+  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(26, 27, 30);
+}
+@media (max-width: 1399px) {
+  .static-hero-style-4 .progressbar-hero .progre-text h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+.static-hero-style-4 .progressbar-hero .progre-text span {
+  font-size: 17px;
+  color: rgb(99, 99, 99);
+}
+@media (max-width: 1399px) {
+  .static-hero-style-4 .progressbar-hero .progre-text span {
+    font-size: 14px;
+  }
+}
+@-webkit-keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+@keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+@property --pgPercentage {
+  .static-hero-style-4 .progressbar-hero {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+}
+.static-hero-style-4 .progressbar-hero div[role=progressbar] {
+  --size: 5rem;
+  --fg: #f5af07;
+  --bg: #a1a1a1;
+  --pgPercentage: var(--value);
+  -webkit-animation: growProgressBar 3s 1 forwards;
+          animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+.static-hero-style-4 .progressbar-hero div[role=progressbar]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+  color: #000;
 }
 
 /* static-hero-style-5 */
@@ -4767,6 +4872,11 @@ img {
     max-width: 500px;
   }
 }
+@media (max-width: 1199px) {
+  .static-hero-style-6 .hero-img {
+    max-width: 350px;
+  }
+}
 @media (max-width: 991px) {
   .static-hero-style-6 .hero-img {
     display: none;
@@ -4782,6 +4892,17 @@ img {
   .static-hero-style-6 .shape-52 {
     bottom: -150px;
     right: -150px;
+  }
+}
+.static-hero-style-6 .shape-55 {
+  position: absolute;
+  top: 20%;
+  left: 90px;
+  z-index: -1;
+}
+@media (max-width: 1399px) {
+  .static-hero-style-6 .shape-55 {
+    display: none;
   }
 }
 
@@ -8932,19 +9053,26 @@ img {
   left: 10%;
   top: -49px;
 }
+@media (max-width: 1559px) {
+  .qrest-appointment-area .side-image {
+    left: 5%;
+  }
+}
 @media (max-width: 1449px) {
   .qrest-appointment-area .side-image {
-    left: 6%;
+    left: 0%;
   }
 }
 @media (max-width: 1300px) {
   .qrest-appointment-area .side-image {
-    left: 2%;
+    left: 0%;
   }
 }
 @media (max-width: 1199px) {
   .qrest-appointment-area .side-image {
     left: -80px;
+    width: 550px;
+    top: 0px;
   }
 }
 @media (max-width: 991px) {
@@ -10289,6 +10417,7 @@ img {
   font-family: "Rubik", sans-serif;
   line-height: 1.588;
   color: #636363;
+  margin-bottom: 13px;
 }
 .qrest-about-section-s4 ul li::before {
   content: "\eed8";
@@ -11090,7 +11219,13 @@ img {
 }
 .technolog-content .qrest-section-title-s4 {
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  .technolog-content .qrest-section-title-s4 h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 @media (max-width: 575px) {
   .technolog-content .qrest-section-title-s4 h2 {
@@ -11108,6 +11243,7 @@ img {
   font-family: "Rubik", sans-serif;
   line-height: 1.588;
   color: #636363;
+  margin-bottom: 5px;
 }
 .technolog-content ul li::before {
   content: "\eed8";

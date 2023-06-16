@@ -681,7 +681,9 @@
 			margin-top: 50px;
 		}
 
-		@media (max-width:575px) {}
+		@media (max-width:575px) {
+			margin-top: 100px;
+		}
 
 		h2 {
 			font-size: 56px;
@@ -712,6 +714,7 @@
 			font-family: $heading-font;
 			line-height: 1.588;
 			color: $white;
+			margin-bottom: 10px;
 
 			&::before {
 				content: "\eed8";
@@ -822,6 +825,104 @@
 		position: absolute;
 		bottom: -200px;
 		left: -300px;
+	}
+
+
+
+	.progressbar-hero {
+		position: absolute;
+		right: 1%;
+		top: 34%;
+		z-index: 1;
+		background: rgb(238, 240, 244);
+		width: 350px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		border-top-right-radius: 50px;
+		border-bottom-left-radius: 10px;
+
+		@media (max-width:1699px) {
+			width: 280px;
+			right: 0%;
+		}
+		@media (max-width:1499px) {
+			width: 270px;
+			right: 0%;
+		}
+		@media (max-width:1399px) {
+			display: none;
+		}
+
+		.progre-text {
+			margin-left: 10px;
+
+			h4 {
+				font-size: 22px;
+				font-family: $heading-font;
+				color: rgb(26, 27, 30);
+				@media (max-width:1399px) {
+					font-size: 14px;
+					margin-bottom: 0;	
+				}
+			}
+
+			span {
+				font-size: 17px;
+				color: rgb(99, 99, 99);
+				@media (max-width:1399px) {
+					font-size: 14px;	
+				}
+			}
+		}
+
+
+
+		@keyframes growProgressBar {
+
+			0%,
+			33% {
+				--pgPercentage: 0;
+			}
+
+			100% {
+				--pgPercentage: var(--value);
+			}
+		}
+
+		@property --pgPercentage {
+			syntax: '<number>';
+			inherits: false;
+			initial-value: 0;
+		}
+
+		div[role="progressbar"] {
+			--size: 5rem;
+			--fg: #f5af07;
+			--bg: #a1a1a1;
+			--pgPercentage: var(--value);
+			animation: growProgressBar 3s 1 forwards;
+			width: var(--size);
+			height: var(--size);
+			border-radius: 50%;
+			display: inline-grid;
+			place-items: center;
+			background:
+				radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+				conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: calc(var(--size) / 5);
+			color: var(--fg);
+		}
+
+		div[role="progressbar"]::before {
+			counter-reset: percentage var(--value);
+			content: counter(percentage) '%';
+			color: #000;
+		}
+
+
 	}
 }
 
@@ -1017,6 +1118,9 @@
 		@media (max-width:1399px) {
 			max-width: 500px;
 		}
+		@media (max-width:1199px) {
+			max-width: 350px;
+		}
 
 		@media (max-width:991px) {
 			display: none;
@@ -1033,6 +1137,18 @@
 			bottom: -150px;
 			right: -150px;
 		}
+	
+	}
+	.shape-55 {
+		position: absolute;
+		top: 20%;
+		left: 90px;
+		z-index: -1;
+
+		@media (max-width:1399px) {
+			display: none;
+		}
+	
 	}
 }
 
@@ -1044,17 +1160,21 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
 	@media (max-width:991px) {
 		height: 800px;
 		margin-top: -160px;
 	}
+
 	@media (max-width:767px) {
 		height: 700px;
 		margin-top: -195px;
 	}
+
 	@media (max-width:575px) {
 		margin-top: -228px;
 	}
+
 	&::before {
 		position: absolute;
 		left: 0;
@@ -1074,12 +1194,15 @@
 
 	.text {
 		margin-top: 55px;
+
 		@media (max-width:767px) {
 			margin-top: 150px;
 		}
+
 		@media (max-width:575px) {
 			margin-top: 200px;
 		}
+
 		.sub-title {
 			font-size: 24px;
 			font-family: $heading-font;
@@ -1089,9 +1212,11 @@
 			text-decoration: underline;
 			border: 0;
 			padding: 0;
+
 			@media (max-width:575px) {
 				font-size: 20px;
 			}
+
 			@media (max-width:499px) {
 				font-size: 17px;
 			}
@@ -1102,12 +1227,15 @@
 			font-family: $heading-font;
 			color: $white;
 			font-weight: 700;
+
 			@media (max-width:767px) {
 				font-size: 50px;
 			}
+
 			@media (max-width:575px) {
 				font-size: 40px;
 			}
+
 			@media (max-width:499px) {
 				font-size: 30px;
 			}
@@ -1123,6 +1251,7 @@
 	.hero-botom {
 		justify-content: center;
 	}
+
 	.video-item {
 		margin-left: 50px;
 
@@ -1153,45 +1282,53 @@
 
 			i {
 				font-size: 18px;
-				color:$white;
+				color: $white;
 			}
 
 		}
 	}
 
 
-	.shape-71{
+	.shape-71 {
 		position: absolute;
 		left: 0;
 		bottom: 0;
+
 		@media (max-width:1399px) {
 			left: -100px;
 			bottom: -100px;
 		}
+
 		@media (max-width:767px) {
 			display: none;
 		}
 	}
-	.shape-72{
+
+	.shape-72 {
 		position: absolute;
 		top: 0;
 		right: 0;
+
 		@media (max-width:1399px) {
 			right: -100px;
 			top: -100px;
 		}
+
 		@media (max-width:767px) {
 			display: none;
 		}
 	}
-	.shape-73{
+
+	.shape-73 {
 		position: absolute;
 		right: 20%;
 		bottom: 0;
+
 		@media (max-width:1199px) {
 			width: 150px;
 			right: 10%;
 		}
+
 		@media (max-width:767px) {
 			display: none;
 		}
