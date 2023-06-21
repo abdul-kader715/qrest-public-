@@ -1362,6 +1362,7 @@
 			top: 0;
 			height: 100%;
 			z-index: -1;
+			display: none;
 
 			@media (max-width:1910px) {
 				left: -70px;
@@ -1425,22 +1426,21 @@
 				}
 
 				&:first-child {
-					color: $white;
-
+					/* color: $white;
 					@media (max-width:991px) {
 						color: #636363;
-					}
+					} */
 
-					i {
+					// i {
 
-						&::before {
-							color: $white;
+					// 	&::before {
+					// 		color: $white;
 
-							@media (max-width:991px) {
-								color: #636363;
-							}
-						}
-					}
+					// 		@media (max-width:991px) {
+					// 			color: #636363;
+					// 		}
+					// 	}
+					// }
 				}
 			}
 		}

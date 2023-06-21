@@ -90,6 +90,7 @@
                 line-height: 1.588;
                 color: #636363;
                 font-weight: 500;
+                margin-bottom: 10px;
 
                 &::before {
                     content: "\efe8";
@@ -142,6 +143,16 @@
     .service-single-item {
         z-index: 1;
         box-shadow: 0px 0px 120px 0px transparent;
+
+        .images-bg {
+            
+            &::before {
+                background: rgb(39, 43, 52, 0.63);
+                z-index: 111;
+            }
+        }
+
+
         @media (max-width:1199px) {
             padding: 15px 0;
         }
@@ -164,6 +175,16 @@
         }
 
         &:hover {
+            background-color: rgb(39, 43, 52, 0.63);
+            .images-bg {
+                &::before {
+                    
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+          
+
             .icon {
                 .imaga-1 {
                     display: none;
@@ -192,13 +213,14 @@
                 margin-bottom: 20px;
             }
 
-            a::before {
+            &::before {
                 background: $theme-primary-color-s5;
                 transition: all .3s ease-in-out;
             }
         }
     }
-     .owl-nav {
+
+    .owl-nav {
         display: none;
     }
 
@@ -216,6 +238,7 @@
         margin: 0 7px;
         position: relative;
         border: 0;
+
         @media (max-width:1399px) {
             height: 10px;
         }
@@ -363,7 +386,7 @@
                     }
                 }
 
-                strong{
+                strong {
                     color: $white;
                 }
             }
@@ -612,6 +635,7 @@
             }
         }
     }
+
     .owl-nav {
         display: none;
     }
@@ -629,6 +653,7 @@
         margin: 0 7px;
         position: relative;
         border: 0;
+
         @media (max-width:1399px) {
             height: 10px;
         }
@@ -1032,12 +1057,12 @@
     &::before {
         display: none;
     }
-
+   
     .side-image {
         top: 50%;
         transform: translateY(-50%);
         z-index: -1;
-
+        left: 5%;
         @media (max-width:1599px) {
             left: 0;
         }
@@ -1116,7 +1141,7 @@
 
             h2 {
                 color: #272b34;
-                
+
             }
 
             p {
@@ -1156,6 +1181,7 @@
         margin: 0 7px;
         position: relative;
         border: 0;
+
         @media (max-width:1399px) {
             height: 10px;
         }

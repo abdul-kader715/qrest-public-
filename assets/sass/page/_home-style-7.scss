@@ -825,7 +825,7 @@
 /*10.7 qrest-team-section-s5 */
 .qrest-team-section-s5 {
     position: relative;
-    z-index: 1;
+    z-index: 11;
     overflow: hidden;
 
     @media (max-width:991px) {
@@ -1006,7 +1006,6 @@
     overflow: hidden;
     padding-top: 440px;
     margin-top: -440px;
-    z-index: -1;
 
     @media (max-width:991px) {
         padding-top: 90px;

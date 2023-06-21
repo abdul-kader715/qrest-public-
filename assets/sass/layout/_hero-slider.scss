@@ -383,7 +383,8 @@
 .static-hero-style-4 {
 	height: 1030px;
 	z-index: 1;
-	background: transparent;
+	background: url(../images/slider/slider-2.png);
+	background-repeat: no-repeat;
 	top: -60px;
 	left: 0;
 	width: 100%;
@@ -402,88 +403,88 @@
 		top: -132px;
 	}
 
-	.overly {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background: rgb(26, 30, 42);
-		border-bottom-right-radius: 602px 400px;
-		z-index: -1;
+	// .overly {
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background: rgb(26, 30, 42);
+	// 	border-bottom-right-radius: 602px 400px;
+	// 	z-index: -1;
 
-		@media (max-width:1799px) {
-			border-bottom-right-radius: 267px 320px;
-		}
+	// 	@media (max-width:1799px) {
+	// 		border-bottom-right-radius: 267px 320px;
+	// 	}
 
-		@media (max-width:1679px) {
-			border-bottom-right-radius: 200px 220px;
-		}
+	// 	@media (max-width:1679px) {
+	// 		border-bottom-right-radius: 200px 220px;
+	// 	}
 
-		@media (max-width:1199px) {
-			border-bottom-right-radius: 0;
-		}
-	}
+	// 	@media (max-width:1199px) {
+	// 		border-bottom-right-radius: 0;
+	// 	}
+	// }
 
-	&::before {
-		position: absolute;
-		left: 0;
-		top: 0;
-		content: '';
-		width: 100%;
-		height: 100%;
-		background-color: rgb(26, 30, 42);
-		opacity: 0.439;
-		z-index: -11;
-		border-bottom-right-radius: 535px 320px;
-	}
+	// &::before {
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	content: '';
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-color: rgb(26, 30, 42);
+	// 	opacity: 0.439;
+	// 	z-index: -11;
+	// 	border-bottom-right-radius: 535px 320px;
+	// }
 
-	&::after {
-		position: absolute;
-		left: 0;
-		top: 0;
-		content: '';
-		width: 100%;
-		height: 100%;
-		background-color: rgb(26, 30, 42);
-		opacity: 0.722;
-		z-index: -11;
-		border-bottom-right-radius: 560px 355px;
-	}
+	// &::after {
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	content: '';
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-color: rgb(26, 30, 42);
+	// 	opacity: 0.722;
+	// 	z-index: -11;
+	// 	border-bottom-right-radius: 560px 355px;
+	// }
 
-	.shape {
-		width: 240px;
-		height: 510px;
-		position: absolute;
-		left: -10px;
-		top: 50%;
-		transform: translateY(-50%);
+	// .shape {
+	// 	width: 240px;
+	// 	height: 510px;
+	// 	position: absolute;
+	// 	left: -10px;
+	// 	top: 50%;
+	// 	transform: translateY(-50%);
 
-		&::before {
-			position: absolute;
-			left: 0;
-			top: 0;
-			content: "";
-			width: 100%;
-			height: 100%;
-			background: #242733;
-			border-radius: 12px;
-			z-index: -1;
-		}
+	// 	&::before {
+	// 		position: absolute;
+	// 		left: 0;
+	// 		top: 0;
+	// 		content: "";
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		background: #242733;
+	// 		border-radius: 12px;
+	// 		z-index: -1;
+	// 	}
 
-		&::after {
-			position: absolute;
-			left: 0;
-			top: 50%;
-			content: "";
-			width: 180px;
-			height: 430px;
-			background: #272b37;
-			border-radius: 12px;
-			z-index: -1;
-			transform: translateY(-50%);
-		}
-	}
+	// 	&::after {
+	// 		position: absolute;
+	// 		left: 0;
+	// 		top: 50%;
+	// 		content: "";
+	// 		width: 180px;
+	// 		height: 430px;
+	// 		background: #272b37;
+	// 		border-radius: 12px;
+	// 		z-index: -1;
+	// 		transform: translateY(-50%);
+	// 	}
+	// }
 
 
 	.text {
@@ -899,7 +900,7 @@
 
 		div[role="progressbar"] {
 			--size: 5rem;
-			--fg: #f5af07;
+			--fg: #fa4e20;
 			--bg: #a1a1a1;
 			--pgPercentage: var(--value);
 			animation: growProgressBar 3s 1 forwards;
