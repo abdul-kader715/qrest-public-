@@ -1188,6 +1188,9 @@
             font-size: 20px;
         }
     }
+    .blog-card-single .card-text .top-text span::before{
+        background: $theme-primary-color-s4;
+    }
   .blog-card-single .images {
      
 

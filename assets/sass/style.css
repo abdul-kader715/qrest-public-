@@ -6855,17 +6855,6 @@ img {
     padding-bottom: 90px;
   }
 }
-.qrest-cta-section::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(27, 73, 98);
-  opacity: 0.769;
-  z-index: -1;
-}
 .qrest-cta-section .top-icon {
   width: 130px;
   height: 130px;
@@ -11341,6 +11330,9 @@ img {
   .qrest-blog-section-s4 .blog-card-single .card-text h2 {
     font-size: 20px;
   }
+}
+.qrest-blog-section-s4 .blog-card-single .card-text .top-text span::before {
+  background: #fa4e20;
 }
 .qrest-blog-section-s4 .blog-card-single .images a {
   color: #fa4e20;
