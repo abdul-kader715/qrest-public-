@@ -688,12 +688,14 @@
 
 		h2 {
 			font-size: 56px;
-			font-family: $heading-font;
+			font-family: $base-font;
 			color: $white;
-			font-weight: 700;
+			font-weight: 600;
+			margin-right: 50px;
 
 			@media (max-width:1199px) {
 				font-size: 40px;
+				margin-left: 0;
 			}
 
 			@media (max-width:767px) {

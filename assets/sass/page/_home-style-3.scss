@@ -958,7 +958,20 @@
 .qrest-compny-solution-section {
     position: relative;
     z-index: 1;
-
+    padding: 100px 0;
+    @media (max-width:991px) {
+        padding: 90px 0 40px;
+     }
+    @media (max-width:767px) {
+        padding: 80px 0 30px;
+     }
+    .side-text-logo {
+        top: 39%;
+        @media (max-width:991px) {
+           display: none; 
+           padding: 90px 0;
+        }
+    }
     .bg-img {
         position: absolute;
         left: 0;

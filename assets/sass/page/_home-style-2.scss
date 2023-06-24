@@ -163,9 +163,42 @@
         @media (max-width:575px) {
             display: block;
         }
-
+       
         .about-btn,
         .about-btn-s2 {
+            background-color: $theme-primary-color;
+            font-size: 18px;
+            font-family: $heading-font;
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            padding: 15px 20px;
+            border-radius: 100px;
+            background-color: #f4f5f9;
+            color: $small-black;
+
+            i {
+                margin-right: 15px;
+                font-size: 24px;
+                color: $theme-primary-color;
+            }
+        }
+
+       
+    }
+    .nav-link{
+        padding: 0;
+    }
+    .nav-item{
+        margin-right: 20px;
+        @media (max-width:575px) {
+           margin-bottom: 20px;
+        }
+    }
+    .nav-tabs .nav-link.active{
+        color: transparent;
+        border-color: transparent;
+        .about-btn {
             background-color: $theme-primary-color;
             font-size: 18px;
             font-family: $heading-font;
@@ -178,25 +211,16 @@
             i {
                 margin-right: 15px;
                 font-size: 24px;
-            }
-        }
-
-        .about-btn-s2 {
-            background-color: #f4f5f9;
-            color: $small-black;
-            margin-left: 25px;
-
-            @media (max-width:575px) {
-                margin-left: 0;
-                margin-top: 10px;
-            }
-
-            i {
-                color: $theme-primary-color;
+                color: $white;
             }
         }
     }
-
+    .nav-tabs {
+        border-bottom: 1px solid transparent;
+    }
+    .nav-tabs .nav-link:hover {
+        border-color: transparent;
+    }
     .about-item {
         margin-top: 40px;
 
@@ -217,7 +241,7 @@
                     height: 30px;
                     line-height: 30px;
                     border-radius: 100%;
-                    padding-left: 3px;
+                    padding-left: 1px;
                     color: $white;
                     text-align: center;
                 }

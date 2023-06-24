@@ -71,7 +71,12 @@
             display: block;
         }
     }
-
+    .qrest-section-title-s4 h2{
+        margin-right: 50px;
+        @media (max-width:1199px) {
+           margin-right: 0; 
+        }
+    }
     .about-right-item {
 
         margin-right: 0px;
@@ -80,7 +85,16 @@
         @media (max-width:575px) {
             width: 100%;
         }
-
+        &:hover {
+            .icon {
+                background: $theme-primary-color-s4;
+                color: $white;
+            }
+        }
+        
+        .icon {
+            color: $theme-primary-color-s4;
+        }
         .text {
             margin-right: 0;
 

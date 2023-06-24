@@ -2,7 +2,16 @@
 
 /*8.1 qrest-about-section-s5 */
 .qrest-about-section-s5 {
-
+    padding: 100px 0;
+    @media (max-width:991px) {
+       padding: 90px 0;
+    }
+    @media (max-width:767px) {
+       padding: 80px 0;
+    }
+    @media (max-width:575px) {
+       padding-top: 50px;
+    }
     .about-left-content {
         @media (max-width:575px) {
             margin-bottom: 60px;
@@ -145,7 +154,7 @@
         box-shadow: 0px 0px 120px 0px transparent;
 
         .images-bg {
-            
+
             &::before {
                 background: rgb(39, 43, 52, 0.63);
                 z-index: 111;
@@ -175,15 +184,16 @@
         }
 
         &:hover {
-            background-color: rgb(39, 43, 52, 0.63);
+            background-color: rgb(39, 43, 52, 0.93);
+
             .images-bg {
                 &::before {
-                    
+
                     opacity: 1;
                     visibility: visible;
                 }
             }
-          
+
 
             .icon {
                 .imaga-1 {
@@ -1057,12 +1067,13 @@
     &::before {
         display: none;
     }
-   
+
     .side-image {
         top: 50%;
         transform: translateY(-50%);
         z-index: -1;
         left: 5%;
+
         @media (max-width:1599px) {
             left: 0;
         }

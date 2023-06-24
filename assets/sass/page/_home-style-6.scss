@@ -400,6 +400,7 @@
         border: 5px solid #ffffff;
         position: relative;
         z-index: 1111;
+        margin-top: 25px;
 
         i {
             font-size: 40px;
@@ -961,7 +962,11 @@
 
         .card-text {
 
-
+            .top-text {
+                strong {
+                    background: $theme-primary-color-s6;
+                }
+            }
             .top-text span {
                 @media (max-width:575px) {
                     padding: 10px 10px;
