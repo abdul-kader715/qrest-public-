@@ -1476,7 +1476,12 @@
         }
     }
 }
-
+.qrest-brand-section-s2 {
+    padding-bottom: 80px;
+    @media (max-width:991px) {
+        padding-bottom: 60px;
+    }
+}
 /*3.10 qrest-team-section */
 .qrest-team-section {
     .qrest-section-title {

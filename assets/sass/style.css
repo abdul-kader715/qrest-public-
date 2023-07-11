@@ -1799,6 +1799,21 @@ img {
   }
 }
 
+.sticky-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: -200px;
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.sticky-on {
+  opacity: 1;
+  top: 0;
+}
+
 /*--------------------------------------------------------------
 2. header
 --------------------------------------------------------------*/
@@ -4067,6 +4082,7 @@ img {
 }
 .static-hero-style-2 .text p {
   padding-right: 150px;
+  margin-bottom: 25px;
 }
 @media (max-width: 767px) {
   .static-hero-style-2 .text p {
@@ -6049,21 +6065,6 @@ img {
   border-radius: 0;
 }
 
-.sticky-header {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: -200px;
-  z-index: 9999;
-  opacity: 0;
-  transition: all 0.7s;
-}
-
-.sticky-on {
-  opacity: 1;
-  top: 0;
-}
-
 /* 3.2 qrest-features-section */
 .qrest-features-section {
   position: relative;
@@ -7434,6 +7435,15 @@ img {
   background-color: #57b23e;
 }
 
+.qrest-brand-section-s2 {
+  padding-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .qrest-brand-section-s2 {
+    padding-bottom: 60px;
+  }
+}
+
 /*3.10 qrest-team-section */
 @media (max-width: 991px) {
   .qrest-team-section .qrest-section-title {
@@ -8677,7 +8687,7 @@ img {
 
 /*5.6 qrest-fun-fact-area */
 .qrest-fun-fact-area {
-  padding-top: 150px;
+  padding-top: 180px;
 }
 @media (max-width: 991px) {
   .qrest-fun-fact-area {
@@ -9064,7 +9074,8 @@ img {
 
 .qrest-brand-section-s02 {
   background: #fff;
-  padding-top: 120px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 @media (max-width: 991px) {
   .qrest-brand-section-s02 {
@@ -9074,6 +9085,7 @@ img {
 @media (max-width: 767px) {
   .qrest-brand-section-s02 {
     padding-top: 80px;
+    padding-bottom: 20px;
   }
 }
 .qrest-brand-section-s02 .grid {
@@ -12895,6 +12907,17 @@ img {
 /*9.5 qrest-portfolio-area-section-s6 */
 .qrest-portfolio-area-section-s6 {
   padding-top: 0;
+  padding-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .qrest-portfolio-area-section-s6 {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .qrest-portfolio-area-section-s6 {
+    padding-bottom: 50px;
+  }
 }
 .qrest-portfolio-area-section-s6 .portfolio-top-content {
   background: url(../images/portfolio/bg-s6.jpg);

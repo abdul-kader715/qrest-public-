@@ -515,8 +515,14 @@
 /*9.5 qrest-portfolio-area-section-s6 */
 .qrest-portfolio-area-section-s6 {
     padding-top: 0;
+    padding-bottom: 90px;
 
-    @media (max-width:991px) {}
+    @media (max-width:991px) {
+        padding-bottom: 60px;
+    }
+    @media (max-width:767px) {
+        padding-bottom: 50px;
+    }
 
     .portfolio-top-content {
         background: url(../images/portfolio/bg-s6.jpg);
